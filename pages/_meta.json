@@ -1,0 +1,24 @@
+{
+    "index": {
+        "title": "Inicio",
+        "type": "page",
+        "theme": {
+            "layout": "raw"
+        }
+    },
+    "instalar": {
+        "title": "Instalar",
+        "type": "page",
+        "theme": {
+            "breadcrumb": false
+        }
+    },
+    "acerca-del-proyecto": {
+        "title": "Acerca del proyecto",
+        "type": "page",
+        "theme": {
+            "typesetting": "article"
+        }
+    }
+
+}

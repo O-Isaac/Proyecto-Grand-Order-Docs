@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[tabindex]:not([tabindex="-1"]):focus-visible {
+    box-shadow: none;
+}
+
+.dark .logo {
+    @apply invert
+}
+
+.nextra-sidebar-container {
+    border-right: 1px solid #80808042;
+}
