@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 
 export default {
-  docsRepositoryBase: 'https://github.com/Proyecto-Grand-Order-Oficial/Proyecto-Grand-Order/tree/producci%C3%B3n/',
+  docsRepositoryBase: 'https://github.com/O-Isaac/Proyecto-Grand-Order-main/tree/master',
   logo: (
     <>
       <img className="logo" width="40px" src="/images/bg-logo.svg" alt="Logo" />
@@ -12,7 +12,7 @@ export default {
     </>
   ),
   project: {
-    link: "https://github.com/Proyecto-Grand-Order-Oficial/Proyecto-Grand-Order",
+    link: "https://github.com/O-Isaac/Proyecto-Grand-Order-main",
   },
   useNextSeoProps() {
     return {
