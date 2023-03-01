@@ -11,12 +11,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-
     steps:
- 
     - name: Notify to channel
       uses: sarisia/actions-status-discord@v1.11.0
       if: always()
