@@ -60,7 +60,7 @@ export default {
     );
   },
   banner: {
-    key: "2.0-release",
+    key: "3.0-release",
     text: (
       <a href="/" target="_blank">
         🎉 Nueva pagina del proyecto →
