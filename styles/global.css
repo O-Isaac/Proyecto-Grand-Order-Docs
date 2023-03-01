@@ -13,3 +13,31 @@
 .nextra-sidebar-container {
     border-right: 1px solid #80808042;
 }
+
+/* Component Card/Card */
+.dark .card {
+    --bg-color: rgba(255, 255, 255, 0.1);
+    --circle-color: rgba(255, 255, 255, 0.06);
+    --circle-b-color: rgba(255, 255, 255, 0.4);
+    --card-c-bg: rgb(20, 20, 20);
+}
+
+.light .card {
+    --bg-color: rgba(0, 0, 0, 0.01);
+    --circle-color: rgba(0,0,0, 0.10);
+    --circle-b-color: rgba(0,0,0, 0.50);
+    --card-c-bg: rgb(235, 235, 235);
+}
+
+.dark .card:active {
+    background-color: rgb(31, 85, 233);
+} 
+
+.light .card:active {
+    background-color: rgb(114, 150, 249);
+} 
+
+#cards:hover .card::after {
+    opacity: 1;
+}
+

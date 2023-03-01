@@ -1,0 +1,72 @@
+.cards {
+  display: flex;
+  margin: auto;
+  gap: 8px;
+  justify-content: center;
+
+  @apply flex-wrap md:flex-nowrap;
+}
+
+.card {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  aspect-ratio: 1.5;
+  flex-direction: column;
+  position: relative;
+  width: 432px;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+
+  ---circle-t: 40%;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    var(--circle-color),
+    transparent var(---circle-t)
+  );
+
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    var(--circle-b-color),
+    transparent var(---circle-t)
+  );
+  z-index: 1;
+}
+
+.card > .cardContent {
+  background-color: var(--card-c-bg);
+  border-radius: inherit;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+
+  @apply grid place-items-center
+}
+
+
+
+
