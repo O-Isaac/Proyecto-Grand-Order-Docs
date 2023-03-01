@@ -31,6 +31,9 @@ solo para las ultimas versiones de npm
 corepack enable 
 ```
 
+## Como contribuir
+Para contribuir haz un fork de este repositorio, haz los cambios que veas oportuno y inicia una pull request para examinar y añadir tu cambios. 
+
 ## Autor
 
 👤 **IsaacZM**
