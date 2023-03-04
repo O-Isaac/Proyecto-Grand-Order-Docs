@@ -23,7 +23,6 @@ export default {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter: fm } = useConfig();
-
     const hostname =
       process.env.VERCEL_ENV === "production"
         ? "proyectograndorder.es"
