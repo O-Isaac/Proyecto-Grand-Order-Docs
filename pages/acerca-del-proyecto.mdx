@@ -1,5 +1,6 @@
 import Policy from "../components/Policy/Policy.jsx"
-import { Callout } from 'nextra-theme-docs'
+import { Callout, Card, Cards  } from 'nextra-theme-docs'
+import { FaFileContract } from "react-icons/fa"
 
 <Callout type="info" emoji="ℹ️">
 **Recordatorio Básico**
@@ -31,14 +32,21 @@ Las presentes Condiciones de Servicio se aplican a todos los usuarios del Sitio 
 
 Nuestra Organización Privada se reserva el derecho a modificar cualquier aspecto del Sitio Web en cualquier momento, sin obligación de notificarlo.
 
-<section className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-6 my-6">
-    <Policy href="https://drive.google.com/file/d/1-hFZ6As-YTuGxxWQKKl-jo43UYzd6y51/view" title="Politica de privacidad" description="La presente Política de Privacidad establece los términos en que Fate/Grand Order
-(Proyecto Español) usa o no usa la información que es proporcionada por sus usuarios
-al momento de utilizar su sitio web y como no recoge o almacena ningún dato..." />
-    <Policy href="https://drive.google.com/file/d/1gsylAEfdtnDa-W3Y5Q8MITJPt_dpeKKD/view" title="Privacy Policy" description="This Privacy Policy establishes the terms in which Fate/Grand Order (Spanish Project) uses or
-does not use the information that is provided by its users when using its website and how it
-does not collect or store any data from the App that we provide to patch FGO." />
-</section>
+<Cards num={2}>
+    <Card
+    arrow
+    icon={<FaFileContract className="text-2xl" />}
+    title="Politica de Privacidad"
+    href="https://drive.google.com/file/d/1-hFZ6As-YTuGxxWQKKl-jo43UYzd6y51/view">
+  </Card>
+
+    <Card
+    arrow
+    icon={<FaFileContract className="text-2xl" />}
+    title="Privacy Policy"
+    href="https://drive.google.com/file/d/1gsylAEfdtnDa-W3Y5Q8MITJPt_dpeKKD/view">
+  </Card>
+</Cards>
 
 # Copyright / Propiedad intelectual
 Si usted es un titular de derechos de autor o un agente del titular del derecho de autor y cree que un envío de usuario u otro contenido en nuestro sitio web o App infringe sus derechos de autor de la propiedad intelectual derechos de autor, usted puede enviar un reporte de abuso o DMCA a team@proyectograndorder.es para su revisión.
