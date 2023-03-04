@@ -18,11 +18,9 @@ module.exports = withNextra({
          // Redirecciones
       ]
    }
-})
-  module.exports = {
-    async redirects() {
-      return [
-        {
+module.exports = withNextra({
+   redirects: function () {
+       return [ {
           source: '/descarga',
           destination: '/instalar',
           permanent: true,
@@ -31,10 +29,8 @@ module.exports = withNextra({
           source: '/descarga-v2',
           destination: '/instalar',
           permanent: true,
-        },
-      ]
-    },
-  }
-)
+        }]
+   } 
+})
 
 
