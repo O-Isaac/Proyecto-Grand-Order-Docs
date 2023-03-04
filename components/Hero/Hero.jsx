@@ -19,8 +19,9 @@ export default function Hero() {
   return (
     <div style={stylesBackground} className="grid place-items-center h-[800px]">
       <Link className="h-full" href="/instalar">
-        <section className="h-full w-auto grid place-items-center object-cover">
+        <section className="h-full w-auto grid place-items-center">
           <img
+            className="h-full object-cover"
             src={`/themes/${theme}/char.png`}
             alt={theme === "dark" ? "Morgan" : "Altria"}
           />
