@@ -9,6 +9,7 @@ export default function Hero() {
   const stylesBackground = {
     backgroundImage: `url(/themes/${theme}/hero_background_up.jpg)`,
     backgroundSize: "cover",
+    backgroundPosition: "center"
   };
 
   useEffect(() => {
@@ -17,8 +18,8 @@ export default function Hero() {
 
   return (
     <div style={stylesBackground} className="grid place-items-center h-[800px]">
-      <Link href="/instalar">
-        <section className="h-auto w-auto grid place-items-center">
+      <Link className="h-full" href="/instalar">
+        <section className="h-full w-auto grid place-items-center object-cover">
           <img
             src={`/themes/${theme}/char.png`}
             alt={theme === "dark" ? "Morgan" : "Altria"}
