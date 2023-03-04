@@ -12,7 +12,13 @@ const withNextra = require('nextra')({
   }
 })
 
-module.exports = withNextra(
+module.exports = withNextra({
+   redirects: function () {
+      return [
+         // Redirecciones
+      ]
+   }
+})
   module.exports = {
     async redirects() {
       return [
