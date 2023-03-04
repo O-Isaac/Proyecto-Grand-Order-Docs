@@ -44,6 +44,15 @@ export default {
             frontMatter.description || "¡Juega Fate Grand Order en español!"
           }
         />
+       <meta
+          property="image"
+          content={
+            frontMatter.title
+              ? `${"https://" + hostname}/api/og?title=${frontMatter.title}`
+              : `${"https://" + hostname}/api/og
+          `
+          }
+        />
         <meta
           property="og:image"
           content={
