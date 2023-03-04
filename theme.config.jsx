@@ -62,6 +62,9 @@ export default {
           `
           }
         />
+        <meta property="og:image:width" content="1190" />
+        <meta property="og:image:height" content="340" />
+
         <link
           rel="apple-touch-icon"
           sizes="57x57"
