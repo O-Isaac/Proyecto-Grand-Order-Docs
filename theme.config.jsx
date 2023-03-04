@@ -23,7 +23,7 @@ export default {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter: fm } = useConfig();
-    
+
     const hostname =
       process.env.VERCEL_ENV === "production"
         ? "proyectograndorder.es"
@@ -51,8 +51,8 @@ export default {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1020" />
+        <meta property="og:image:height" content="170" />
 
         <link
           rel="apple-touch-icon"
@@ -124,12 +124,12 @@ export default {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#202020" />
         <meta
           name="msapplication-TileImage"
           content="/favicon/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#202020" />
       </>
     );
   },

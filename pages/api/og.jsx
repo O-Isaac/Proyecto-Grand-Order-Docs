@@ -12,8 +12,8 @@ export default function handler(req) {
     const isLight = getRandom(["dark", "light"]) === "light";
 
     const options = {
-      width: 1200,
-      height: 630,
+      width: 1020,
+      height: 170,
     };
 
     if (isLight) {
