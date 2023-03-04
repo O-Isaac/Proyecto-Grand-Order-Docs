@@ -12,4 +12,23 @@ const withNextra = require('nextra')({
   }
 })
 
-module.exports = withNextra()
+module.exports = withNextra(
+  module.exports = {
+    async redirects() {
+      return [
+        {
+          source: '/descarga',
+          destination: '/instalar',
+          permanent: true,
+        },
+        {
+          source: '/descarga-v2',
+          destination: '/instalar',
+          permanent: true,
+        },
+      ]
+    },
+  }
+)
+
+
