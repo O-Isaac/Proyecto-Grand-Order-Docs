@@ -5,7 +5,7 @@ const withNextra = require('nextra')({
 
 module.exports = withNextra({
    redirects: function () {
-       return [ {
+       return [{
           source: '/descarga',
           destination: '/instalar',
           permanent: true,
@@ -15,7 +15,7 @@ module.exports = withNextra({
           destination: '/instalar',
           permanent: true,
         }]
-   } 
+   }
 })
 
 

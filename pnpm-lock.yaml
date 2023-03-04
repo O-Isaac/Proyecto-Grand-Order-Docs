@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@svgr/webpack': ^6.5.1
+  '@vercel/analytics': ^0.1.11
   '@vercel/og': ^0.2.0
   autoprefixer: ^10.4.13
   next: ^13.2.1
@@ -11,10 +12,12 @@ specifiers:
   prop-types: ^15.8.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-icons: ^4.8.0
   react-tabbordion: ^1.0.6
   tailwindcss: ^3.2.7
 
 dependencies:
+  '@vercel/analytics': 0.1.11_react@18.2.0
   '@vercel/og': 0.2.0
   autoprefixer: 10.4.13_postcss@8.4.21
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -24,6 +27,7 @@ dependencies:
   prop-types: 15.8.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.8.0_react@18.2.0
   react-tabbordion: 1.0.6_sh5qlbywuemxd2y3xkrw2y2kr4
   tailwindcss: 3.2.7_postcss@8.4.21
 
@@ -1899,6 +1903,14 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: false
+
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@vercel/og/0.2.0:
@@ -3899,6 +3911,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.8.0_react@18.2.0:
+    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
