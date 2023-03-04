@@ -22,7 +22,7 @@ export default {
   },
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
-    const { frontMatter } = useConfig();
+    const { frontMatter: fm } = useConfig();
     const hostname =
       process.env.VERCEL_ENV === "production"
         ? "proyectograndorder.es"
@@ -30,38 +30,29 @@ export default {
 
     const path = defaultLocale === locale ? asPath : `/${locale}${asPath}`;
     const url = "https://" + hostname + path;
+    const description = fm.description || "¡Juega Fate Grand Order en español!";
+    const title = fm.title || "Proyecto Grand Order";
+    const image = fm.title
+      ? `${"https://" + hostname}/api/og?title=${fm.title}`
+      : `${"https://" + hostname}/api/og`;
 
     return (
       <>
+        <meta name="description" content={description} />
         <meta property="og:url" content={url} />
-        <meta
-          property="og:title"
-          content={frontMatter.title || "Proyecto Grand Order"}
-        />
-        <meta
-          property="og:description"
-          content={
-            frontMatter.description || "¡Juega Fate Grand Order en español!"
-          }
-        />
-       <meta
-          property="image"
-          content={
-            frontMatter.title
-              ? `${"https://" + hostname}/api/og?title=${frontMatter.title}`
-              : `${"https://" + hostname}/api/og
-          `
-          }
-        />
-        <meta
-          property="og:image"
-          content={
-            frontMatter.title
-              ? `${"https://" + hostname}/api/og?title=${frontMatter.title}`
-              : `${"https://" + hostname}/api/og
-          `
-          }
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content={hostname} />
+        <meta property="twitter:url" content={url} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+        <meta property="og:image:width" content="1020" />
+        <meta property="og:image:height" content="170" />
+
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -132,12 +123,12 @@ export default {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#202020" />
         <meta
           name="msapplication-TileImage"
           content="/favicon/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#202020" />
       </>
     );
   },
