@@ -14,12 +14,6 @@ const withNextra = require('nextra')({
 
 module.exports = withNextra({
    redirects: function () {
-      return [
-         // Redirecciones
-      ]
-   }
-module.exports = withNextra({
-   redirects: function () {
        return [ {
           source: '/descarga',
           destination: '/instalar',
