@@ -24,6 +24,7 @@
   }
 }
 
+
 .heroWrapper {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
@@ -32,6 +33,6 @@
 .chrImg {
   margin-top: -2rem;
   opacity: 0;
-  animation: fadeInTop 2s ease forwards;
+  animation: fadeInTop .8s linear forwards;
   animation-delay: 1.3s;
 }
