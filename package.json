@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm deploy && pnpm deploy:sitemaps",
-    "deploy": "next build",
-    "deploy:sitemaps": "next-sitemap"
+    "build": "pnpm build:site && pnpm build:sitemaps",
+    "build:site": "next build",
+    "build:sitemaps": "next-sitemap"
   },
   "keywords": [],
   "author": "",
