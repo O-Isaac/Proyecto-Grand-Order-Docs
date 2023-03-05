@@ -3,6 +3,10 @@ import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 import { domain } from "../../utils";
 
+export const Default = {
+  description: "Únete a Proyecto Grand Order y disfruta de Fate/Grand Order en español. Calidad en la traducción y actualizaciones frecuentes. ¡Únete ahora a la comunidad!" 
+}
+
 export default function Head() {
   const { asPath, defaultLocale, locale } = useRouter();
   const { frontMatter: fm } = useConfig();
@@ -10,7 +14,7 @@ export default function Head() {
   const hostname = domain.getHostname();
   const path = defaultLocale === locale ? asPath : `/${locale}${asPath}`;
   const url = "https://" + hostname + path;
-  const description = fm.description || "¡Juega Fate Grand Order en español!";
+  const description = fm.description || Default.description;
   const title = fm.title || "Proyecto Grand Order";
   const image = domain.getOgImagePath(hostname, title);
 
