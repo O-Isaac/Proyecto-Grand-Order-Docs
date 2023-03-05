@@ -1,6 +1,5 @@
 import Head from "./components/Head/head";
 import Logo from "./components/Logo/Logo";
-
 import { search } from "./utils";
 
 const repository = {
