@@ -7,6 +7,7 @@ specifiers:
   autoprefixer: ^10.4.13
   axios: ^1.3.4
   next: ^13.2.1
+  next-sitemap: ^4.0.2
   nextra: ^2.2.16
   nextra-theme-docs: ^2.2.16
   postcss: ^8.4.21
@@ -23,6 +24,7 @@ dependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   axios: 1.3.4
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
+  next-sitemap: 4.0.2_next@13.2.1
   nextra: 2.2.16_qgtcjgzkkjtbiyvnx7d32fl5vu
   nextra-theme-docs: 2.2.16_vew7vg7qzvsrfl7ub63f7u6dme
   postcss: 8.4.21
@@ -1308,6 +1310,10 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
+
+  /@corex/deepmerge/4.0.37:
+    resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
+    dev: false
 
   /@headlessui/react/1.7.12_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-FhSx5V+Qp0GvbTpaxyS+ymGDDNntCacClWsk/d8Upbr19g3AsPbjfPk4+m2CgJGcuCB5Dz7LpUIOAbvQTyjL2g==}
@@ -3597,6 +3603,19 @@ packages:
       next: 13.2.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-sitemap/4.0.2_next@13.2.1:
+    resolution: {integrity: sha512-NQVzguzW6xkh0fZzmgZJ//H9f1DdvKmhJmTO1xuIPmDuZxM2Gd48CrKHXVnbK0zAx52hpyNe3ZUGkrExUWyljg==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.37
+      minimist: 1.2.8
+      next: 13.2.1_biqbaboplfbrettd7655fr4n2y
     dev: false
 
   /next-themes/0.2.1_qgtcjgzkkjtbiyvnx7d32fl5vu:
