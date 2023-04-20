@@ -19,6 +19,9 @@
         "theme": {
             "typesetting": "article"
         }
+    },
+    "reportar": {
+        "title": "Reportar error",
+        "type": "page"
     }
-
 }
