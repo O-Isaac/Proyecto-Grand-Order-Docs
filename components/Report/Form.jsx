@@ -24,7 +24,7 @@ export default function Report () {
                     Occurrio un error cuando cargaba el formulario por favor recargue la pagina.
                 </Callout>
             )}
-            <div className="h-[972px]" id="ff-compose"></div>
+            <div className="h-[972px] my-5" id="ff-compose"></div>
         </>
     )
 }

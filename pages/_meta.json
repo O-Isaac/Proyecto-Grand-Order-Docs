@@ -22,6 +22,9 @@
     },
     "reportar": {
         "title": "Reportar error",
-        "type": "page"
+        "type": "page",
+        "theme": {
+            "layout": "raw"
+        }
     }
 }
