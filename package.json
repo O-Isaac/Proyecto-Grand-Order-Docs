@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "pnpm build:site && pnpm build:sitemaps",
     "build:site": "next build",
-    "build:sitemaps": "next-sitemap"
+    "build:sitemaps": "next-sitemap",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
