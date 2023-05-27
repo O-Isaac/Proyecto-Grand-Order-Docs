@@ -1,0 +1,9 @@
+{
+  "avalon": {
+    "title": "Avalon Le Fae",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  }
+}

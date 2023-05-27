@@ -3,14 +3,70 @@
 @tailwind utilities;
 
 [tabindex]:not([tabindex="-1"]):focus-visible {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .dark .logo {
-    @apply invert
+  @apply invert;
 }
 
 .nextra-sidebar-container {
-    border-right: 1px solid #80808042;
+  border-right: 1px solid #80808042;
 }
 
+/*  Only for special page  */
+
+.specialHero {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+.container {
+  display: block;
+  max-width: min(90ch, 100% - 4rem);
+  margin-inline: auto;
+  padding-bottom: 2rem;
+}
+
+.container > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container > ul {
+  list-style: disc;
+  margin: 1rem 2rem;
+}
+
+.container a[href] {
+  color: rgb(101, 101, 237);
+  text-decoration: underline;
+}
+
+.nextra-banner-container {
+  background-color: rgb(92, 92, 255);
+  background-image: none !important;
+}
+
+.panel {
+  width: 50%;
+}
+
+.flicking-arrow-prev {
+  left: 25% !important;
+}
+
+.flicking-arrow-prev::before,
+.flicking-arrow-prev::after {
+  background-color: white !important;
+}
+
+.flicking-arrow-next::before,
+.flicking-arrow-next::after {
+  background-color: white !important;
+}
+
+.flicking-arrow-next {
+  right: 25% !important;
+}
