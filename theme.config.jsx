@@ -12,5 +12,13 @@ export default {
   project: { link: repository.project },
   logo: <Logo />,
   useNextSeoProps: search.useNextSeoProps,
-  head: Head
+  head: Head,
+  banner: {
+    key: "release-avalon",
+    text: (
+      <a href="/special/avalon" target="_blank">
+        🎉 Ya esta aqui Avalon Le Fay!. Leer Mas →
+      </a>
+    ),
+  },
 };
