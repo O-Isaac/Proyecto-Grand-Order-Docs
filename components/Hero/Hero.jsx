@@ -1,41 +1,51 @@
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { useTheme } from "nextra-theme-docs";
 
 import Link from "next/link";
 import Image from "next/image";
-import style from "./Hero.module.css";
 
 export default function Hero() {
   const { resolvedTheme } = useTheme();
-  const [theme, setTheme] = useState("dark");
-  const [key, setKey] = useState(0);
+  const [bgUrl, setBgUrl] = useState("/themes/light/hero_background_up.jpg");
+  const [charUrl, setCharUrl] = useState("/themes/light/char.webp");
+  const [isLoading, setLoading] = useState(true);
+
+  const bgId = useId();
+  const charId = useId();
 
   useEffect(() => {
-    if (resolvedTheme) {
-      setTheme(resolvedTheme);
-      setKey((prevKey) => ++prevKey);
-    }
+    if (resolvedTheme === "system") return;
+    setBgUrl(`/themes/${resolvedTheme}/hero_background_up.jpg`);
+    setCharUrl(`/themes/${resolvedTheme}/char.webp`);
+    setLoading(false);
   }, [resolvedTheme]);
 
+  if (isLoading)
+    return (
+      <section className="h-[800px] w-screen relative overflow-hidden"></section>
+    );
+
   return (
-    <div key={key} className={"grid place-items-center h-[800px] relative " + style.heroWrapper}>
-      <Link className="h-full" href="/instalar">
-        <section className="h-full w-auto grid place-items-center">
-          <Image
-            className="object-cover"
-            src={`/themes/${theme}/hero_background_up.jpg`}
-            fill
-            alt={theme === "dark" ? "Morgan Background" : "Altria Background"}
-          />
-          <Image
-            className={"h-full object-cover " + style.chrImg}
-            width={907}
-            height={764}
-            src={`/themes/${theme}/char.png`}
-            alt={theme === "dark" ? "Morgan" : "Altria"}
-          />
-        </section>
+    <section className="h-[800px] w-screen relative overflow-hidden">
+      <Image
+        key={bgId}
+        className="relative z-10 object-cover object-center"
+        priority
+        src={bgUrl}
+        alt="Image"
+        fill
+      />
+
+      <Link key={charId} href={"/instalar"}>
+        <Image
+          className="relative transition-all hover:opacity-90 active:scale-110 z-10 object-cover w-auto h-full mx-auto"
+          priority
+          width={907}
+          height={764}
+          alt="Instalar"
+          src={charUrl}
+        />
       </Link>
-    </div>
+    </section>
   );
 }
