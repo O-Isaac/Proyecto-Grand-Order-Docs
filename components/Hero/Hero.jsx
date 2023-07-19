@@ -14,7 +14,7 @@ export default function Hero() {
   const charId = useId();
 
   useEffect(() => {
-    if (resolvedTheme === "system") return;
+    if (resolvedTheme === undefined || resolvedTheme === "system") return;
     setBgUrl(`/themes/${resolvedTheme}/hero_background_up.jpg`);
     setCharUrl(`/themes/${resolvedTheme}/char.webp`);
     setLoading(false);
