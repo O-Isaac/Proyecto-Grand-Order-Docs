@@ -64,6 +64,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.2.7
     version: 3.2.7(postcss@8.4.21)
+  tailwindcss-animated:
+    specifier: ^1.0.1
+    version: 1.0.1(tailwindcss@3.2.7)
 
 packages:
 
@@ -5494,6 +5497,14 @@ packages:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.0
+    dev: true
+
+  /tailwindcss-animated@1.0.1(tailwindcss@3.2.7):
+    resolution: {integrity: sha512-u5wusj89ZwP8I+s8WZlaAd7aZTWBN/XEG6QgMKpkIKmAf3xP1A6WYf7oYIKmGaB10UAQaSqWopi/i1ozzZEs8Q==}
+    peerDependencies:
+      tailwindcss: '>=3.1.0'
+    dependencies:
+      tailwindcss: 3.2.7(postcss@8.4.21)
     dev: true
 
   /tailwindcss@3.2.7(postcss@8.4.21):
