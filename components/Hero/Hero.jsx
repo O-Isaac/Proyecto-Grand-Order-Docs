@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+
 import { useTheme } from "next-themes"
-import { Fragment, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Hero () {
   const theme = useTheme()
@@ -27,9 +30,10 @@ export default function Hero () {
       </div>
 
       {currentTheme && (
-        <Link  href="/instalar">
+        <Link href="/instalar">
           <Image src={`/themes/${currentTheme}/hero_background_up.jpg`} alt="Background Hero" fill className="z-0 object-cover transition-transform" priority/>
-          <Image src={`/themes/${currentTheme}/char.webp`} alt="Character Hero" fill className="lg:object-contain object-cover transition-transform" priority />
+          <div className="dark:bg-black/10 animate-fade animate-once animate-ease-out duration-300 bg-white/10 backdrop-blur-sm absolute inset-0 transition-all"/>
+          <Image src={`/themes/${currentTheme}/char.webp`} alt="Character Hero" fill className="lg:object-contain object-cover transition-transform pointer-events-none" priority />
         </Link>
       )}
     </section>
