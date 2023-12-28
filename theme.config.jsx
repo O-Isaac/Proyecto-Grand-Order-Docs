@@ -21,4 +21,13 @@ export default {
       </a>
     ),
   },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: 'Claro',
+        dark: 'Oscuro',
+        system: 'Sistema'
+      }
+    }
+  }
 };
