@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@egjs/flicking-plugins':
     specifier: ^4.7.0
-    version: 4.7.0(@egjs/flicking@4.11.2)
+    version: 4.7.1(@egjs/flicking@4.11.2)
   '@egjs/react-flicking':
     specifier: ^4.10.9
     version: 4.10.9
@@ -22,7 +22,7 @@ dependencies:
     version: 14.0.4(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
   next-sitemap:
     specifier: ^4.0.2
-    version: 4.0.2(@next/env@14.0.4)(next@14.0.4)
+    version: 4.0.2(@next/env@14.1.0)(next@14.0.4)
   next-themes:
     specifier: ^0.2.1
     version: 0.2.1(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
@@ -1373,8 +1373,8 @@ packages:
     resolution: {integrity: sha512-cLcGizTrrUNA2EYE3MBmEDt2tQv1joVP1Q3oDisZ5nw0MZDx2kcgEXM+/kZpfa/PAkFvYVhRUZwytIQWoN3V/w==}
     dev: false
 
-  /@egjs/flicking-plugins@4.7.0(@egjs/flicking@4.11.2):
-    resolution: {integrity: sha512-BbFDKanOPVLG042fRNC0BSNa/28mohscT0hQOruorfplv/4Qm3jQ+Ldk2iytsdN631tF199NW6nkkizEmRMRRA==}
+  /@egjs/flicking-plugins@4.7.1(@egjs/flicking@4.11.2):
+    resolution: {integrity: sha512-J0k499sCs5IAMXAJuBcrY1OoiHRi4BPbS1/RCCkIzsYgdoHzcAUjKyhSsms3gLz4O/K5eTbBmWBUtFO86fETHg==}
     peerDependencies:
       '@egjs/flicking': ^4.1.0
     dependencies:
@@ -1822,6 +1822,10 @@ packages:
 
   /@next/env@14.0.4:
     resolution: {integrity: sha512-irQnbMLbUNQpP1wcE5NstJtbuA/69kRfzBrpAD7Gsn8zm/CY6YQYc3HQBz8QPxwISG26tIm5afvvVbu508oBeQ==}
+    dev: false
+
+  /@next/env@14.1.0:
+    resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==}
     dev: false
 
   /@next/swc-darwin-arm64@14.0.4:
@@ -4659,7 +4663,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next-sitemap@4.0.2(@next/env@14.0.4)(next@14.0.4):
+  /next-sitemap@4.0.2(@next/env@14.1.0)(next@14.0.4):
     resolution: {integrity: sha512-NQVzguzW6xkh0fZzmgZJ//H9f1DdvKmhJmTO1xuIPmDuZxM2Gd48CrKHXVnbK0zAx52hpyNe3ZUGkrExUWyljg==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -4668,7 +4672,7 @@ packages:
       next: '*'
     dependencies:
       '@corex/deepmerge': 4.0.37
-      '@next/env': 14.0.4
+      '@next/env': 14.1.0
       minimist: 1.2.8
       next: 14.0.4(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
     dev: false
