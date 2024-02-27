@@ -1,36 +1,39 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Proyecto Grand Order
+description: Empieza a jugar Fate/Grand Order en español.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Empieza a jugar Fate/Grand Order en español.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Descargar
+      link: https://github.com/rayshift/translatefgo/releases
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Leer documentación
+      link: /rayshift/descarga
+      icon: document
 ---
+
+
+import Hero from "@components/hero.astro"
+
+<Hero />
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Ultimo contenido" icon="pencil">
+		Seguiremos el calendario de JP para traer todos los eventos que podamos al servidor NA.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Calidad" icon="star">
+		Comprobamos siempre nuestras traduciones y tratamos de traer la mayor calidad posible.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Gran Equipo" icon="approve-check">
+		Detras de nuestra traduciónes tenemos un gran equipo con pasión por el juego.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Amor" icon="sun">
+		Todo el contenido que producimos lo hacemos de forma gratis y para la comunidad hispana.
 	</Card>
 </CardGrid>

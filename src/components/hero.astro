@@ -1,0 +1,81 @@
+<style is:inline>
+    main {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        background-origin: border-box;
+
+    }
+
+    [data-theme="light"] main {
+        background-image: url(/assets/backgrounds/bg-light-2.webp);
+    }
+
+    [data-theme="dark"] main {
+        background-image: url(/assets/backgrounds/bg-dark.webp);
+    }
+
+    [data-theme="light"] #_top {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    [data-theme="light"] .tagline {
+        text-shadow: 1px 1px 3px rgba(0,0,0,5);
+        color: white;
+    }
+
+    [data-theme="light"] .minimal {
+        color: hsl(234, 90%, 60%);
+        background-color: white;
+        padding: 1rem 1.25rem;
+        backdrop-filter: blur(2px);
+        transition: background 300ms;
+
+        &:hover {
+            background: rgba(255,255,255, 0.7)
+        }
+    }
+
+    [data-theme="light"] .primary {
+        transition: background 300ms;
+
+        &:hover {
+            background: hsla(234, 90%, 60%, 0.7);
+        }
+    }
+
+
+    [data-theme="dark"] .primary {
+        transition: background 300ms;
+
+        &:hover {
+            background: hsla(224, 100%, 85%, .7)
+        }
+    }
+
+    [data-theme="dark"] .minimal {
+        transition: opacity 300ms;
+        background: #23262f;
+        padding: 1rem 1.25rem;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+
+    [data-theme="light"]  header.header {
+        background-color: rgba(255,255,255);
+    }
+
+
+    @media (max-width: 1440px) {
+        main {
+            background-position: calc(50% - 250px);;
+        }
+    }
+</style>
+
+

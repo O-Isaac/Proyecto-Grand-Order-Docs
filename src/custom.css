@@ -1,0 +1,49 @@
+/* Theme */
+
+[data-theme="light"] .site-title {
+    color: #222;
+}
+
+[data-theme="dark"] .site-title {
+    color: #f0f0f0;
+}
+
+/* Fixes */
+
+p {
+    text-wrap: pretty;
+}
+
+/* Accordion */
+
+[data-theme="light"] #accordion summary, [data-theme="light"] #accordion::after {
+    color: white;
+}
+
+[data-theme="light"] #accordion > * {
+    color: rgb(201, 201, 201);
+}
+
+
+/* Alerts */
+
+
+[data-theme="light"] .alert-wrapper.info {
+    background-color: rgba(92, 184, 92, 0.9);
+    border: 1px solid rgba(92, 184, 92, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+[data-theme="light"] .alert-wrapper.error {
+    background-color: rgba(255, 204, 204, 0.9);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    color: rgb(100, 0, 0);
+}
+
+[data-theme="light"] .alert-wrapper.warning {
+    background-color: rgba(255, 255, 204, 0.9);
+    border: 1px solid rgba(255, 204, 0, 0.5);
+    color: rgb(102, 51, 0);
+}
+
+

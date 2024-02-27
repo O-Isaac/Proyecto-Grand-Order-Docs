@@ -1,0 +1,39 @@
+---
+import "@egjs/flicking/dist/flicking.css";
+---
+
+<style is:inline>
+    .flicking-viewport .flicking-camera > img {
+        margin: 0 1rem;
+        border-radius: .365rem;
+        width: 615px;
+        aspect-ratio: 17/8;
+    }
+
+
+    @media (max-width: 425px) {
+        .flicking-viewport .flicking-camera > img {
+            width: 300px;
+        }
+    }
+</style>
+
+<section id="carousel" class="flicking-viewport">
+    <div class="flicking-camera">
+      <slot />
+    </div>
+</section>
+
+<script>
+    import Flicking from "@egjs/flicking";
+
+    new Flicking("#carousel", {
+            align: "center",
+            circular: true,
+    });
+</script>
+
+
+
+  
+  

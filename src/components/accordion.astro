@@ -1,0 +1,58 @@
+---
+interface Props {
+    summary: string,
+    isOpen?: boolean,
+    anchorName?: string
+}
+---
+
+<details open={Astro.props.isOpen} id="accordion">
+    <summary id={Astro.props.anchorName}>{Astro.props.summary}</summary>
+    <div class="body">
+        <slot />
+    </div>
+</details>
+
+
+<style>
+    #accordion {
+        background-color: hsl(224, 14%, 16%);
+        border-radius: .365rem;
+        position: relative;
+        overflow: hidden;
+        transition: max-height ease-in-out 300ms;
+    }
+
+    #accordion > summary {
+        padding: 1rem 1.25rem;
+        list-style-type: none;
+    }
+
+    #accordion > .body {
+        padding: 1rem 1.25rem;
+        margin: 0;
+        background-color: hsl(222, 16%, 12%);
+    }
+    
+    #accordion::after {
+        content: "?";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: normal;
+        padding: 0 1rem;
+        margin-top: -.3rem;
+        opacity: .3;
+    }
+
+    #accordion[open] summary ~ * {
+      animation: sweep 300ms ease-in-out;
+    }
+
+    @keyframes sweep {
+     0%    {opacity: 0; margin-left: -10px}
+     100%  {opacity: 1; margin-left: 0px}
+    }
+</style>

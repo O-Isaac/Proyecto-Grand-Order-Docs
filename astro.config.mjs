@@ -1,27 +1,52 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  devToolbar: {
+    enabled: false
+  },
+  integrations: [starlight({
+    title: 'Proyecto Grand Order',
+    logo: {
+      src: "./src/assets/logo.svg"
+    },
+    favicon: "./src/assets/logo.svg",
+    social: {
+      github: 'https://github.com/O-Isaac/Proyecto-Grand-Order-Docs',
+      discord: "https://discord.gg/fate-go-esp",
+      facebook: "https://www.facebook.com/groups/fgo.esp/",
+      "x.com": "https://x.com/fgo_esp"
+    },
+    customCss: [
+    './src/custom.css',
+    ],
+    sidebar: [{
+      label: 'Rayshift Translate App',
+      items: [
+        {
+          label: "Descargar",
+          link: "/rayshift/descarga"
+        },
+        {
+          label: "Desinstalar",
+          link: "/rayshift/deinstalar/"
+        },
+        {
+          label: "Actualizar",
+          link: "/rayshift/actulizar/"
+        },
+        {
+          label: "Preguntas Frecuentes",
+          link: "/rayshift/preguntas/",
+        },
+      ],
+    },
+    {
+      label: "Proyecto Grand Order",
+      autogenerate: {
+        directory: "pgo"
+      }
+    }
+  ]
+  })]
 });

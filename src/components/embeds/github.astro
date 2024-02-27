@@ -1,0 +1,30 @@
+---
+interface Props {
+    repo: `${string}/${string}`,
+    url?: string
+}
+
+const { repo, url = `https://github.com/${repo}` } = Astro.props
+
+import crypto from "node:crypto"
+
+const uuid = crypto.randomUUID()
+const hash = crypto.createHash("sha-256").update(uuid).digest("hex")
+---
+
+<a target="_blank" rel="noopener noreferrer" href={url}>
+    <img width="1200px" height="600px" src={`https://opengraph.githubassets.com/${hash}/${repo}`} alt={`https://github.com/${repo}`} />
+</a>
+
+<style>
+    img {
+        margin: 1rem 0;
+        border-radius: .365rem;
+        transition: opacity 300ms;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
+
+    img:hover {
+        opacity: 0.7;
+    }
+</style>

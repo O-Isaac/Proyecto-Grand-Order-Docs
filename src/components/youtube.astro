@@ -1,0 +1,18 @@
+---
+interface Props {
+    videoId: string
+}
+---
+
+<lite-youtube videoid={Astro.props.videoId}></lite-youtube>
+
+<script>
+    import '@justinribeiro/lite-youtube';
+</script>
+
+<style>
+    lite-youtube {
+        border-radius: .365rem;
+        overflow: hidden;
+    }
+</style>

@@ -1,0 +1,36 @@
+---
+interface Props {
+    type: "error" | "info" | "warning"
+}
+---
+
+<section class="alert-wrapper" class:list={Astro.props.type}>
+    <slot></slot>
+</section>
+
+<style>
+    .alert-wrapper {
+        padding: 1rem 1.25rem;
+        text-wrap: pretty;
+        line-height: 1.5;
+        border-radius: .365rem;
+    }
+
+    .alert-wrapper.info {
+        background-color: rgba(92, 184, 92, 0.5);
+        border: 1px solid rgba(92, 184, 92, 1);
+        color: rgb(255, 255, 255);
+    }
+
+    .alert-wrapper.error {
+        background-color: rgba(217, 83, 79, 0.5);
+        border: 1px solid rgba(217, 83, 79, 1);
+        color: rgb(255, 255, 255);
+    }
+
+    .alert-wrapper.warning {
+        background-color: rgba(240, 173, 78, 0.5);
+        border: 1px solid rgba(240, 173, 78, 1);
+        color: rgb(255, 255, 255);
+    }
+</style>
