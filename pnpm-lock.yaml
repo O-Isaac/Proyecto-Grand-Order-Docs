@@ -22,7 +22,7 @@ dependencies:
     version: 14.0.4(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
   next-sitemap:
     specifier: ^4.0.2
-    version: 4.0.2(@next/env@14.0.4)(next@14.0.4)
+    version: 4.0.2(@next/env@14.2.1)(next@14.0.4)
   next-themes:
     specifier: ^0.2.1
     version: 0.2.1(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
@@ -43,7 +43,7 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-icons:
     specifier: ^5.0.0
-    version: 5.0.0(react@18.2.0)
+    version: 5.1.0(react@18.2.0)
   react-tabbordion:
     specifier: ^1.0.6
     version: 1.0.6(prop-types@15.8.1)(react@18.2.0)
@@ -1822,6 +1822,10 @@ packages:
 
   /@next/env@14.0.4:
     resolution: {integrity: sha512-irQnbMLbUNQpP1wcE5NstJtbuA/69kRfzBrpAD7Gsn8zm/CY6YQYc3HQBz8QPxwISG26tIm5afvvVbu508oBeQ==}
+    dev: false
+
+  /@next/env@14.2.1:
+    resolution: {integrity: sha512-qsHJle3GU3CmVx7pUoXcghX4sRN+vINkbLdH611T8ZlsP//grzqVW87BSUgOZeSAD4q7ZdZicdwNe/20U2janA==}
     dev: false
 
   /@next/swc-darwin-arm64@14.0.4:
@@ -4659,7 +4663,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next-sitemap@4.0.2(@next/env@14.0.4)(next@14.0.4):
+  /next-sitemap@4.0.2(@next/env@14.2.1)(next@14.0.4):
     resolution: {integrity: sha512-NQVzguzW6xkh0fZzmgZJ//H9f1DdvKmhJmTO1xuIPmDuZxM2Gd48CrKHXVnbK0zAx52hpyNe3ZUGkrExUWyljg==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -4668,7 +4672,7 @@ packages:
       next: '*'
     dependencies:
       '@corex/deepmerge': 4.0.37
-      '@next/env': 14.0.4
+      '@next/env': 14.2.1
       minimist: 1.2.8
       next: 14.0.4(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
     dev: false
@@ -5070,8 +5074,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-icons@5.0.0(react@18.2.0):
-    resolution: {integrity: sha512-8gBBjYRrO14BU9RuMEVptG5aB1gwNPAAgsKOuPggx2hg332pTky/r8FidEJW95cL6IG2mYCEHaYuAxw74wLefw==}
+  /react-icons@5.1.0(react@18.2.0):
+    resolution: {integrity: sha512-D3zug1270S4hbSlIRJ0CUS97QE1yNNKDjzQe3HqY0aefp2CBn9VgzgES27sRR2gOvFK+0CNx/BW0ggOESp6fqQ==}
     peerDependencies:
       react: '*'
     dependencies:
