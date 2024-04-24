@@ -18,7 +18,7 @@
     "@egjs/react-flicking": "^4.10.9",
     "@vercel/analytics": "^1.0.0",
     "axios": "^1.3.4",
-    "next": "14.0.4",
+    "next": "14.2.3",
     "next-sitemap": "^4.0.2",
     "next-themes": "^0.2.1",
     "nextra": "^2.13.2",
