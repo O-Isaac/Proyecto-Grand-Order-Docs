@@ -5,10 +5,18 @@ module.exports = {
     './components/**/*.jsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-dark': 'url(/themes/dark/hero.webp)',
+        'hero-light': 'url(/themes/light/hero.webp)',
+      },
+      content: {
+        'chr-dark': "url('/themes/dark/chr.webp')"
+      }
+    },
   },
   plugins: [
-    require("tailwindcss-animated")
+    require("@midudev/tailwind-animations")
   ],
   darkMode: "class"
 }

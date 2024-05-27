@@ -27,9 +27,5 @@
       "layout": "raw"
     }
   },
-  "special": "Especial",
-  "blog": {
-    "type": "page",
-    "title": "Blog"
-  }
+  "special": "Especial"
 }

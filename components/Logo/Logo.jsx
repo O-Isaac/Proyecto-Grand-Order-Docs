@@ -1,12 +1,12 @@
-import Image from "next/image";
+import { Fragment } from "react";
 
 export default function Logo() {
   return (
-    <>
-      <Image className="logo" width={40} height={40} src="/images/bg-logo.svg" alt="Logo" />
+    <Fragment>
+      <img src="/images/bg-logo.svg" fetchPriority="high" loading="lazy" className="logo size-10" alt="Logo" />
       <h1 style={{ marginLeft: "5px", fontWeight: 600 }}>
         Proyecto Grand Order
       </h1>
-    </>
+    </Fragment>
   );
 }
