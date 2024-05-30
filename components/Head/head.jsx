@@ -16,7 +16,7 @@ export default function Head() {
   const url = "https://" + hostname + path;
   const description = fm.description || Default.description;
   const title = fm.title || "Proyecto Grand Order";
-  const image = `https://services.proyectograndorder.es/api/og/image?title=${title}`
+  const image = fm.image || `https://services.proyectograndorder.es/api/og/image?title=${title}`
 
   return (
     <>
