@@ -1,3 +1,6 @@
+---
+title: 404 Not Found
+---
 import { Card, Cards } from 'nextra-theme-docs'
 import { FaHome, FaFileArchive } from "react-icons/fa"
 
@@ -5,17 +8,9 @@ import { FaHome, FaFileArchive } from "react-icons/fa"
 Puedes consultar estos enlaces de interes
 
 <Cards num={2}>
-    <Card
-    arrow
-    icon={<FaHome className="text-2xl" />}
-    title="Inicio"
-    href="/">
-  </Card>
 
-    <Card
-    arrow
-    icon={<FaFileArchive className="text-2xl" />}
-    title="Instalar"
-    href="/instalar">
-  </Card>
+    <Card arrow icon={<FaHome className="text-2xl" />} title="Inicio" href="/" />
+
+    <Card arrow icon={<FaFileArchive className="text-2xl" />} title="Instalar" href="/instalar" />
+
 </Cards>
