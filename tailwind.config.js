@@ -16,7 +16,8 @@ module.exports = {
     },
   },
   plugins: [
-    require("@midudev/tailwind-animations")
+    require("@midudev/tailwind-animations"),
+    require("tailwind-gradient-mask-image")
   ],
   darkMode: "class"
 }
