@@ -5,5 +5,12 @@
     "theme": {
       "layout": "raw"
     }
+  },
+  "traum": {
+    "title": "Traum",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+	}
   }
 }
