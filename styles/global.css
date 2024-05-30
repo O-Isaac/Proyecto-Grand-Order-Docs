@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Parrallax */
+@keyframes parallax-up {
+  from { background-position: center 0; }
+  to { background-position: center 200px;}
+}
+
+.parrallax-up-animation {
+  animation: parallax-up linear both;
+  animation-timeline: scroll();
+  animation-range: 0 500px;
+  background-repeat: no-repeat;
+}
+
+/* Nextra fixes */
+
 [tabindex]:not([tabindex="-1"]):focus-visible {
   box-shadow: none;
 }
