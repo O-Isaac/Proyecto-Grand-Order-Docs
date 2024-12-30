@@ -20,12 +20,9 @@
       "typesetting": "article"
     }
   },
-  "reportar": {
-    "title": "Reportar error",
-    "type": "page",
-    "theme": {
-      "layout": "raw"
-    }
+  "reportes": {
+    "title": "Reportar Error",
+    "type": "page"
   },
   "special": "Paginas Especiales"
 }
