@@ -13,21 +13,21 @@ export default {
   logo: <Logo />,
   useNextSeoProps: search.useNextSeoProps,
   head: Head,
-  banner: {
-    key: "release-avalon",
-    text: (
-      <a href="/special/traum" target="_blank">
-        🎉 Ya esta aqui Traum!. Leer Mas →
-      </a>
-    ),
-  },
+  // banner: {
+  //   key: "release-avalon",
+  //   text: (
+  //     <a href="/special/traum" target="_blank">
+  //       🎉 Ya esta aqui Traum!. Leer Mas →
+  //     </a>
+  //   ),
+  // },
   themeSwitch: {
     useOptions() {
       return {
-        light: 'Claro',
-        dark: 'Oscuro',
-        system: 'Sistema'
-      }
-    }
-  }
+        light: "Claro",
+        dark: "Oscuro",
+        system: "Sistema",
+      };
+    },
+  },
 };
