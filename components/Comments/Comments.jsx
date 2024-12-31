@@ -1,6 +1,9 @@
 import Giscus from "@giscus/react";
+import { useTheme } from "nextra-theme-docs";
 
 export default function Comments({ category, categoryId, position }) {
+  const { resolvedTheme } = useTheme();
+
   return (
     <Giscus
       id="comments"
@@ -13,7 +16,7 @@ export default function Comments({ category, categoryId, position }) {
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition={position}
-      theme={"preferred_color_scheme"}
+      theme={resolvedTheme === "light" ? "light" : "noborder_dark"}
       lang={"es"}
       loading="lazy"
     />
