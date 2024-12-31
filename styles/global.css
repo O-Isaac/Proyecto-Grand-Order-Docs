@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Parrallax */
 @keyframes parallax-up {
-  from { background-position: center 0; }
-  to { background-position: center 200px;}
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200px;
+  }
 }
 
 .parrallax-up-animation {
@@ -85,4 +88,8 @@
 
 .flicking-arrow-next {
   right: 25% !important;
+}
+
+.nextra-toc {
+  border-left: 1px solid #80808042;
 }
