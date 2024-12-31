@@ -45,7 +45,7 @@ export default function EmbedGithub({ repo }) {
   }, []);
 
   return (
-    <section className="bg-neutral-900 border-none rounded-2xl aspect-[16/8] w-full block max-w-full ">
+    <section className="bg-neutral-900 border-none rounded-t-2xl aspect-[16/8] w-full block max-w-full mt-3">
       {hash && (
         <img
           width="1200px"
