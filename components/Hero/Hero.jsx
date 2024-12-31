@@ -8,7 +8,7 @@ export default function Hero() {
           <img
             id="chr"
             fetchpriority="high"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full pt-12 object-cover hover:scale-105 transition-all animate-blurred-fade-in dark:content-chr-dark"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full object-cover hover:scale-105 transition-all animate-blurred-fade-in dark:content-chr-dark"
             loading="eager"
             src="/themes/light/chr.webp"
             alt="Servant"
