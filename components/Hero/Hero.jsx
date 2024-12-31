@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="h-screen">
       <figure className="max-h-svh h-svh dark:bg-hero-dark bg-hero-light bg-cover relative parrallax-up-animation overflow-hidden">
-        <Link href="/special/traum">
+        <Link href="/docs">
           <img
             id="chr"
             fetchpriority="high"
