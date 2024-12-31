@@ -6,23 +6,25 @@
       "layout": "raw"
     }
   },
-  "instalar": {
-    "title": "Instalar",
-    "type": "page",
-    "theme": {
-      "breadcrumb": false
-    }
+  "docs": {
+    "title": "Documentación",
+    "type": "page"
   },
   "acerca-del-proyecto": {
     "title": "Acerca del proyecto",
     "type": "page",
     "theme": {
-      "typesetting": "article"
+      "layout": "full"
     }
   },
   "reportes": {
     "title": "Reportar Error",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   },
-  "special": "Paginas Especiales"
+  "special": {
+    "title": "Paginas Especiales"
+  }
 }
