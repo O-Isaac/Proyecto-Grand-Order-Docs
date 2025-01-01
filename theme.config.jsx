@@ -13,14 +13,14 @@ export default {
   logo: <Logo />,
   useNextSeoProps: search.useNextSeoProps,
   head: Head,
-  // banner: {
-  //   key: "release-avalon",
-  //   text: (
-  //     <a href="/special/traum" target="_blank">
-  //       🎉 Ya esta aqui Traum!. Leer Mas →
-  //     </a>
-  //   ),
-  // },
+  banner: {
+    key: "release-avalon",
+    text: (
+      <a href="/special/nahuil" target="_blank">
+        🌴 Ya esta aqui Lostbelt 7: Nahuil Mictlan!. Leer Mas →
+      </a>
+    ),
+  },
   themeSwitch: {
     useOptions() {
       return {
