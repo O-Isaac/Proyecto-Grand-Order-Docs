@@ -6,6 +6,7 @@ image: /images/Avalon.png
 
 import Container from "@/components/Container/Container.jsx";
 import Carousel from "@/components/Carousel/Carousel.jsx";
+import Comments from "@/components/Comments/Comments.jsx";
 
 <img src="/images/Avalon.png" className="specialHero" />
 
@@ -28,10 +29,26 @@ al tanto de nuestras novedades y animarnos a continuar trabajando en el proyecto
 </Container>
 
 <Carousel>
-  <img className="panel" src="/images/avalon/1.jpg" alt="Avalon Image" />
-  <img className="panel" src="/images/avalon/2.jpg" alt="Avalon Image" />
-  <img className="panel" src="/images/avalon/3.jpg" alt="Avalon Image" />
-  <img className="panel" src="/images/avalon/4.jpg" alt="Avalon Image" />
+  <img
+    className="panel pointer-events-none"
+    src="/images/avalon/1.jpg"
+    alt="Avalon Image"
+  />
+  <img
+    className="panel pointer-events-none"
+    src="/images/avalon/2.jpg"
+    alt="Avalon Image"
+  />
+  <img
+    className="panel pointer-events-none"
+    src="/images/avalon/3.jpg"
+    alt="Avalon Image"
+  />
+  <img
+    className="panel pointer-events-none"
+    src="/images/avalon/4.jpg"
+    alt="Avalon Image"
+  />
 </Carousel>
 
 <Container>
@@ -58,5 +75,11 @@ Sí te interesa a unirte a cualquiera de las redes sociales de la comunidad, se 
   https://www.youtube.com/channel/UCoSCxGT_tde-Sb8rB5M2c7g
 
 <br />
+
+<Comments
+  category="Avalon Le Fae"
+  categoryId="DIC_kwDOJDojyM4Clps4"
+  position="top"
+/>
 
 </Container>
