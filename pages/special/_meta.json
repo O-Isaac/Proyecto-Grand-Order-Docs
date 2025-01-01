@@ -11,6 +11,13 @@
     "type": "page",
     "theme": {
       "layout": "raw"
-	}
+    }
+  },
+  "nahuil": {
+    "title": "Nahuil Mictlan",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
   }
 }
