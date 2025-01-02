@@ -26,5 +26,10 @@
   },
   "special": {
     "title": "Paginas Especiales"
+  },
+  "roadmap_link": {
+    "title": "Roadmap",
+    "type": "page",
+    "href": "https://roadmap.proyectograndorder.es"
   }
 }
