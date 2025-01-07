@@ -18,7 +18,7 @@ module.exports = withNextra({
         {
           source: '/instalar',
           destination: '/docs',
-          permament: true,
+          permanent: true,
         }]
    }
 })
