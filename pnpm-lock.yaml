@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@egjs/flicking-plugins':
         specifier: ^4.7.1
-        version: 4.7.1(@egjs/flicking@4.11.2)
+        version: 4.7.1(@egjs/flicking@4.12.0)
       '@egjs/react-flicking':
         specifier: ^4.11.2
-        version: 4.11.2
+        version: 4.12.0
       '@giscus/react':
         specifier: ^3.0.0
         version: 3.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -740,11 +740,11 @@ packages:
   '@corex/deepmerge@4.0.43':
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
 
-  '@egjs/agent@2.4.3':
-    resolution: {integrity: sha512-XvksSENe8wPeFlEVouvrOhKdx8HMniJ3by7sro2uPF3M6QqWwjzVcmvwoPtdjiX8O1lfRoLhQMp1a7NGlVTdIA==}
+  '@egjs/agent@2.4.4':
+    resolution: {integrity: sha512-cvAPSlUILhBBOakn2krdPnOGv5hAZq92f1YHxYcfu0p7uarix2C6Ia3AVizpS1SGRZGiEkIS5E+IVTLg1I2Iog==}
 
-  '@egjs/axes@3.9.0':
-    resolution: {integrity: sha512-V+HxHxEGmlu/0yJ9kqlj2doiJt1yVeROTy/0Qf+IaJ9hMabjzUgfYffGR+3atcRpejjGbcpAIiBrGbAkDVaLjg==}
+  '@egjs/axes@3.9.1':
+    resolution: {integrity: sha512-vaqUe/boRDk/A4TjiPtMv+lf7c4Q2jTER/Hw4I61NiJUyPftlZjaP4cteBCQejFyZmzimmA2W0cLmYZHTjBY8A==}
 
   '@egjs/component@3.0.5':
     resolution: {integrity: sha512-cLcGizTrrUNA2EYE3MBmEDt2tQv1joVP1Q3oDisZ5nw0MZDx2kcgEXM+/kZpfa/PAkFvYVhRUZwytIQWoN3V/w==}
@@ -754,8 +754,8 @@ packages:
     peerDependencies:
       '@egjs/flicking': ^4.1.0
 
-  '@egjs/flicking@4.11.2':
-    resolution: {integrity: sha512-qOAn3NUpVlPkakaVJYFeFg5LlNNoh+QJVjFEcj4maQ9T+gRngWKha/cYpPgYukMIsjS5F8XYcgeeOINK/md62A==}
+  '@egjs/flicking@4.12.0':
+    resolution: {integrity: sha512-HSducaQozc24HAxR5RfI2pRSqxZI1GxudAL52I7yoUj2yYCmY76Vhld9QzrTSWHFLfj7muv+XXB7Lv85HwZahg==}
 
   '@egjs/imready@1.4.1':
     resolution: {integrity: sha512-JIOBs4lB7FYdsKi5uvz2j3SObX8eShtZjtqlOH41tm185aJOQZwiKBK8+V4MxzG4X6DqVhpdN8UcuVwBbElfsg==}
@@ -763,8 +763,8 @@ packages:
   '@egjs/list-differ@1.0.1':
     resolution: {integrity: sha512-OTFTDQcWS+1ZREOdCWuk5hCBgYO4OsD30lXcOCyVOAjXMhgL5rBRDnt/otb6Nz8CzU0L/igdcaQBDLWc4t9gvg==}
 
-  '@egjs/react-flicking@4.11.2':
-    resolution: {integrity: sha512-tayEvJFMj97w+3iDDQVKQl02dc8Z3VoZ7rjU5vBGJP3XFVsoZXyelQIly4a/EtR+4KJj6RvVGj5CT4Rg7juRdw==}
+  '@egjs/react-flicking@4.12.0':
+    resolution: {integrity: sha512-GyyzG/YOQ39r4fAy3MP2qHcshBipnWdIEbnGV50dVrmdtiy2ZADx9MhyIqlx6093lrK4Q35R0Qix+CNdGwV5GQ==}
 
   '@emnapi/runtime@1.2.0':
     resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
@@ -2144,6 +2144,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -3920,23 +3921,23 @@ snapshots:
 
   '@corex/deepmerge@4.0.43': {}
 
-  '@egjs/agent@2.4.3': {}
+  '@egjs/agent@2.4.4': {}
 
-  '@egjs/axes@3.9.0':
+  '@egjs/axes@3.9.1':
     dependencies:
       '@cfcs/core': 0.1.0
-      '@egjs/agent': 2.4.3
+      '@egjs/agent': 2.4.4
       '@egjs/component': 3.0.5
 
   '@egjs/component@3.0.5': {}
 
-  '@egjs/flicking-plugins@4.7.1(@egjs/flicking@4.11.2)':
+  '@egjs/flicking-plugins@4.7.1(@egjs/flicking@4.12.0)':
     dependencies:
-      '@egjs/flicking': 4.11.2
+      '@egjs/flicking': 4.12.0
 
-  '@egjs/flicking@4.11.2':
+  '@egjs/flicking@4.12.0':
     dependencies:
-      '@egjs/axes': 3.9.0
+      '@egjs/axes': 3.9.1
       '@egjs/component': 3.0.5
       '@egjs/imready': 1.4.1
       '@egjs/list-differ': 1.0.1
@@ -3948,10 +3949,10 @@ snapshots:
 
   '@egjs/list-differ@1.0.1': {}
 
-  '@egjs/react-flicking@4.11.2':
+  '@egjs/react-flicking@4.12.0':
     dependencies:
       '@egjs/component': 3.0.5
-      '@egjs/flicking': 4.11.2
+      '@egjs/flicking': 4.12.0
       '@egjs/list-differ': 1.0.1
 
   '@emnapi/runtime@1.2.0':
