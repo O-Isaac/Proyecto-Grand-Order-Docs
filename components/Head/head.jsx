@@ -4,8 +4,9 @@ import { useConfig } from "nextra-theme-docs";
 import { domain } from "../../utils";
 
 export const Default = {
-  description: "Únete a Proyecto Grand Order y disfruta de Fate/Grand Order en español. Calidad en la traducción y actualizaciones frecuentes. ¡Únete ahora a la comunidad!" 
-}
+  description:
+    "Únete a Proyecto Grand Order y disfruta de Fate/Grand Order en español. Calidad en la traducción y actualizaciones frecuentes. ¡Únete ahora a la comunidad!",
+};
 
 export default function Head() {
   const { asPath, defaultLocale, locale } = useRouter();
@@ -16,7 +17,9 @@ export default function Head() {
   const url = "https://" + hostname + path;
   const description = fm.description || Default.description;
   const title = fm.title || "Proyecto Grand Order";
-  const image = fm.image || `https://services.proyectograndorder.es/api/og/image?title=${title}`
+  const image =
+    fm.image ||
+    `https://services.proyectograndorder.es/api/og/image?title=${title}`;
 
   return (
     <>
@@ -40,6 +43,12 @@ export default function Head() {
       <link rel="manifest" href="/favicon/manifest.json" />
       <meta name="msapplication-TileColor" content="#202020" />
       <meta name="theme-color" content="#202020" />
+      <link
+        rel="preload"
+        as="video"
+        href="/themes/musashi.webm"
+        type="video/webm"
+      />
     </>
   );
 }

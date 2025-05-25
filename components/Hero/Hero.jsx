@@ -1,9 +1,18 @@
-import Link from "next/link";
-
 export default function Hero() {
   return (
-    <section className="h-screen">
-      <figure className="max-h-svh h-svh dark:bg-hero-dark bg-hero-light bg-cover relative parrallax-up-animation overflow-hidden">
+    <section className="h-screen bg-gradient-to-t from-gray-400 to-gray-200 -mt-16">
+      <div className="bg-gray-200 absolute left-0 h-1/2 bottom-0 w-full gradient-mask-t-20"></div>
+      <video
+        className="h-full w-full object-cover "
+        autoPlay
+        playsInline
+        muted
+        loop
+        fetchpriority="high"
+        src="/themes/musashi.webm"
+      ></video>
+
+      {/* <figure className="max-h-svh h-svh dark:bg-hero-dark bg-hero-light bg-cover relative parrallax-up-animation overflow-hidden">
         <Link href="/special/nahuil">
           <img
             id="chr"
@@ -14,7 +23,7 @@ export default function Hero() {
             alt="Servant"
           />
         </Link>
-      </figure>
+      </figure> */}
     </section>
   );
 }
