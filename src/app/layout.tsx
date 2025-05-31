@@ -1,11 +1,16 @@
-import './global.css';
-import { RootProvider } from 'fumadocs-ui/provider';
-import { Inter } from 'next/font/google';
-import type { ReactNode } from 'react';
+import "./global.css";
+import { RootProvider } from "fumadocs-ui/provider";
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import type { ReactNode } from "react";
 
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: "Proyecto Grand Order | Documentacion",
+};
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (

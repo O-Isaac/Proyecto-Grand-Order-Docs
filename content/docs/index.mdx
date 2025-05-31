@@ -1,13 +1,102 @@
 ---
-title: Hello World
-description: Your first document
+title: Rayshift Translate App
+description: Esta aplicación ofrece traducciones hechas por Máquina/MTL (Deepl) y manuales de eventos e historias recientes (al inglés) del juego en el Servidor JP y traducciones manuales al Español de la historia principal y diversos Eventos e Interludios, esta última utilizando la traducción oficial del Servidor NA. Además, traducciones al Francés, Indonesio, Ruso, Portugués y Árabe.
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+import { GithubInfo } from "fumadocs-ui/components/github-info";
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 
-## What is Next?
+<GithubInfo owner="rayshift" repo="translatefgo" />
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+## Instalación
+
+**Compatibilidad:** Android 7–15+  
+**Root:** No requerido  
+**Nota:** En algunos dispositivos modernos puede ser necesario Shizuku.
+
+### Pasos
+
+1. **Instala Fate/Grand Order (versión JP)** y asegúrate de tener la última versión disponible.
+2. **Abre el juego** y accede a tu cuenta para asegurarte de que los datos estén actualizados.  
+   Si aparece una solicitud de descarga adicional, acéptala. Luego **cierra la aplicación**.
+3. **Descarga e instala el APK más reciente** desde la [página de lanzamientos](#).
+4. **Configura la aplicación** siguiendo las instrucciones proporcionadas.  
+   Consulta el video tutorial si necesitas ayuda.
+5. En la app, **haz clic en “Install”** debajo del _bundle_ que desees instalar.  
+   Solo es necesario instalar **un bundle a la vez**.
+6. **Vuelve a abrir Fate/Grand Order.**
+
+## Actualizaciones
+
+Los scripts se actualizan de forma regular. Por favor, mantén la aplicación instalada y revísala con frecuencia:  
+el estado de "Instalado" cambiará a **"Actualización disponible"** cuando haya una nueva versión.
+
+### Para actualizar después de que se añada nuevo contenido:
+
+1. **Abre Fate/Grand Order** y acepta la descarga de datos.
+2. **Cierra Fate/Grand Order** y haz clic en **"Update"** dentro de la aplicación de traducción.
+3. **Vuelve a abrir Fate/Grand Order.**
+
+La aplicación también puede **actualizar automáticamente** los scripts instalados cuando se detectan cambios menores, siempre que tu dispositivo sea compatible.  
+Esta opción puede desactivarse desde la pestaña **Acerca de (About)**.
+
+## Desinstalación
+
+1. **Cierra Fate/Grand Order.**
+2. **Abre la aplicación** y haz clic en **"Uninstall"**.
+3. **Vuelve a abrir Fate/Grand Order.**
+
+## Solución de Problemas
+
+Si tienes errores durante el uso de la aplicación o del juego, aquí encontrarás las soluciones más comunes.
+
+Sigue las instrucciones detalladas en cada sección antes de solicitar ayuda.
+
+<Accordions type="single">
+<Accordion title="Problemas de conexión o errores largos">
+Si ves un error muy extenso, es posible que tu conexión a internet no sea estable.  
+Intenta cambiar entre Wi-Fi y datos móviles (4G), o prueba en una ubicación diferente.
+</Accordion>
+
+<Accordion title="Errores como 'Asset database is corrupt' o 'Failed to read beyond the end of the stream'">
+Reinicia tu teléfono. Si el problema persiste, cambia el **modo de acceso al
+sistema de archivos** en la pestaña **Acerca de (About)**.
+
+- Para dispositivos con Android 12 o inferior, selecciona **SAF**.
+- Para dispositivos más recientes, usa **Shizuku**.
+
+</Accordion>
+
+<Accordion title="Error 'An internal error has occurred'">
+
+1. Cambia entre Wi-Fi y datos móviles.
+2. Reinicia tu teléfono.
+3. Ve a **About → Configure Android 11 Setup**.
+4. Reinstala la aplicación TranslateFGO. 5. Si el error continúa, repórtalo como
+   un bug en GitHub.
+
+</Accordion>
+
+<Accordion title="¿Es seguro usar esta aplicación? ¿Me pueden banear?">
+No se ha tomado ninguna acción contra jugadores por usar esta app. TranslateFGO existe desde hace más de 5 años y es usada por decenas de miles de jugadores. Aniplex no ha tomado ninguna medida desde el lanzamiento de esta herramienta en 2020, probablemente porque es un proyecto gratuito y sin fines de lucro.
+
+**Sin embargo**, no podemos garantizar que esto no cambie en el futuro.
+Usas esta app bajo tu propia responsabilidad, Rayshift y Proyecto Grand Order no se hace responsable de cualquier consecuencia.
+
+### Recomendaciones para proteger tu cuenta:
+
+- Asegúrate de **descargar la app únicamente desde [rayshift.io](https://rayshift.io)** o su [página oficial en GitHub](#).
+- **Crea y guarda un código de vinculación (bind code)** para tu cuenta antes de usar la app.
+
+</Accordion>
+
+<Accordion title="¿Funciona esto con la versión NA?">
+  Sí, funciona con todos los idiomas no ingleses que proporciona la app.
+</Accordion>
+
+  <Accordion title="Información de contacto">
+    Esta herramienta se ofrece de buena fe para mejorar el acceso al juego **Fate/Grand Order**.
+    Usa la sección de issues en GitHub para **reportar errores o enviar sugerencias**.
+Si necesitas contactar al responsable actual del proyecto de forma privada, escribe un correo a:  **webmaster@rayshift.io**
+  </Accordion>
+</Accordions>

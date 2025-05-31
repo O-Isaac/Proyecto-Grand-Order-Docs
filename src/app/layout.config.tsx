@@ -1,4 +1,7 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import Logo from "@/components/logo";
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
+import { Fragment } from "react";
+import { IconBook } from "@tabler/icons-react";
 
 /**
  * Shared layout configurations
@@ -10,19 +13,21 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
-      <>
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-label="Logo"
-        >
-          <circle cx={12} cy={12} r={12} fill="currentColor" />
-        </svg>
-        My App
-      </>
+      <Fragment>
+        <Logo className="size-9 aspect-square object-contain dark:fill-white" />
+        Proyecto Grand Order
+      </Fragment>
     ),
   },
+  githubUrl: "https://google.es",
   // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
+  links: [
+    {
+      text: "Documentación",
+      url: "/docs",
+      // secondary items will be displayed differently on navbar
+      secondary: false,
+      icon: <IconBook stroke={2} />,
+    },
+  ],
 };
