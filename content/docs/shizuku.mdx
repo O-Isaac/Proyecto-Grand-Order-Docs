@@ -1,0 +1,179 @@
+---
+title: Shizuku
+description: Guía para instalar y configurar Shizuku para usar el parche de traducción TranslateFGO de Rayshift en Fate/Grand Order
+---
+
+# Shizuku para TranslateFGO
+
+## ¿Qué es Shizuku?
+
+Shizuku es una herramienta esencial para dispositivos Android que permite a las aplicaciones obtener permisos elevados del sistema sin necesidad de rootear el dispositivo. En el contexto de **Fate/Grand Order**, Shizuku es necesario para que funcione correctamente el **parche de traducción TranslateFGO** desarrollado por **Rayshift**.
+
+## ¿Por qué necesitas Shizuku para TranslateFGO?
+
+TranslateFGO es un parche de traducción que convierte el texto japonés de Fate/Grand Order al inglés en tiempo real. Para funcionar correctamente, este parche necesita:
+
+- **Permisos de sistema**: Para interceptar y modificar el contenido mostrado
+
+Shizuku proporciona estos permisos de forma segura sin comprometer la integridad del dispositivo.
+
+## Sobre Fate/Grand Order y la necesidad de traducción
+
+**Fate/Grand Order** es un popular juego móvil RPG desarrollado por Type-Moon, conocido por su compleja narrativa y eventos regulares. Aunque existe una versión global en inglés, la versión japonesa:
+
+- Recibe contenido nuevo con **1-2 años de adelanto**
+- Tiene **eventos exclusivos** y colaboraciones únicas
+- Ofrece la **experiencia original** sin censura
+- Permite acceso a **servants y contenido** que pueden no llegar a la versión global
+
+## Instalación paso a paso
+
+### Requisitos previos
+
+- Dispositivo Android 7.0 o superior
+- Fate/Grand Order (versión japonesa) instalado
+- Acceso a un ordenador con ADB
+- Cable USB para conexión
+- Conexión a internet estable
+
+### Paso 1: Preparar el dispositivo
+
+1. **Habilitar opciones de desarrollador**:
+   - Ve a Configuración > Acerca del teléfono
+   - Toca 7 veces en "Número de compilación"
+   - Regresa a Configuración y busca "Opciones de desarrollador"
+
+2. **Activar depuración USB**:
+   - Dentro de Opciones de desarrollador
+   - Activa "Depuración USB"
+   - Acepta el mensaje de advertencia
+
+### Paso 2: Instalar Shizuku
+
+1. **Descargar Shizuku** desde Google Play Store o desde el [repositorio oficial](https://github.com/RikkaApps/Shizuku)
+2. **Instalar la aplicación** en tu dispositivo Android
+3. **Abrir Shizuku** y seguir las instrucciones iniciales
+
+### Paso 3: Configurar ADB en el ordenador
+
+1. **Instalar ADB**:
+   - Windows: Descargar SDK Platform Tools
+   - Mac/Linux: Instalar via Homebrew o gestor de paquetes
+   
+2. **Verificar instalación**:
+   ```bash
+   adb version
+   ```
+
+### Paso 4: Activar Shizuku
+
+1. **Conectar el dispositivo** al ordenador via USB
+2. **Autorizar la conexión** en el dispositivo cuando aparezca el prompt
+3. **En Shizuku**, copiar el comando que aparece en pantalla
+4. **Ejecutar en el ordenador**:
+   ```bash
+   adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+   ```
+5. **Verificar** que Shizuku muestre "Servicio ejecutándose"
+
+### Paso 5: Instalar TranslateFGO
+
+1. **Descargar TranslateFGO** desde el repositorio oficial de Rayshift
+2. **Instalar la aplicación** en tu dispositivo
+3. **Abrir TranslateFGO** y otorgar todos los permisos solicitados
+4. **En la configuración de Shizuku**, autorizar TranslateFGO para usar permisos elevados
+
+## Configuración de TranslateFGO
+
+### Configuración básica
+
+1. **Idioma de origen**: Japonés
+2. **Idioma de destino**: Inglés (o tu idioma preferido)
+3. **Modo de traducción**: Tiempo real
+4. **Área de detección**: Configurar según la resolución de tu dispositivo
+
+### Configuración avanzada
+
+- **Filtros de texto**: Para evitar traducir elementos de UI innecesarios
+- **Velocidad de traducción**: Balancear entre precisión y velocidad
+- **Modo de superposición**: Transparencia y posición de las traducciones
+- **Exclusiones**: Áreas donde no aplicar traducción
+
+## Video de referencia
+
+Para una guía visual detallada del proceso de instalación:
+[https://www.youtube.com/watch?v=xjYcUaMOD4A](https://www.youtube.com/watch?v=xjYcUaMOD4A)
+
+## Solución de problemas específicos
+
+### TranslateFGO no detecta el texto del juego
+
+- Verificar que Shizuku esté ejecutándose
+- Comprobar permisos de superposición
+- Reiniciar tanto TranslateFGO como FGO
+- Ajustar el área de detección de texto
+
+### Las traducciones no aparecen correctamente
+
+- Verificar la configuración de idiomas
+- Comprobar la conexión a internet
+- Ajustar la transparencia de la superposición
+- Revisar los filtros de texto aplicados
+
+### Problemas tras actualizar FGO
+
+- TranslateFGO puede necesitar actualización
+- Verificar compatibilidad con la nueva versión
+- Comprobar si hay actualizaciones del parche
+- Reiniciar Shizuku si es necesario
+
+### El servicio se detiene tras reiniciar
+
+- Shizuku requiere reactivación manual tras cada reinicio
+- Ejecutar nuevamente el comando ADB
+- Considerar usar scripts de automatización
+- Verificar que USB debugging siga habilitado
+
+## Consideraciones importantes
+
+### Términos de servicio
+
+- Usar TranslateFGO bajo tu propia responsabilidad
+- Revisar los términos de servicio de Fate/Grand Order
+- El parche es para uso personal y educativo
+- No redistribuir contenido traducido con fines comerciales
+
+### Rendimiento del dispositivo
+
+- TranslateFGO puede afectar el rendimiento durante el juego
+- Configurar adecuadamente para balancear funcionalidad y fluidez
+- Cerrar aplicaciones innecesarias mientras juegas
+- Monitorear la temperatura del dispositivo
+
+### Actualizaciones del juego
+
+- Mantener TranslateFGO actualizado
+- Verificar compatibilidad antes de actualizar FGO
+- Hacer backup de configuraciones importantes
+- Estar atento a anuncios de Rayshift sobre actualizaciones
+
+## Recursos adicionales
+
+### Enlaces oficiales
+
+- [Rayshift (Desarrolladores de TranslateFGO)](https://rayshift.io/)
+- [Repositorio de Shizuku](https://github.com/RikkaApps/Shizuku)
+- [Comunidad de FGO](https://www.reddit.com/r/grandorder/)
+
+### Comunidades de soporte
+
+- Discord de Rayshift para soporte técnico
+- Foros de FGO para ayuda general
+- Subreddit de Grand Order para discusiones
+- Grupos de Telegram especializados
+
+## Conclusión
+
+Shizuku es una herramienta indispensable para disfrutar de Fate/Grand Order en japonés con traducciones en tiempo real. El parche TranslateFGO de Rayshift, combinado con Shizuku, permite a los jugadores experimentar el contenido más reciente del juego sin barreras idiomáticas, manteniendo la experiencia original y accediendo a contenido exclusivo de la versión japonesa.
+
+La configuración inicial puede parecer compleja, pero siguiendo esta guía paso a paso, podrás disfrutar de una experiencia de juego completamente traducida y actualizada.

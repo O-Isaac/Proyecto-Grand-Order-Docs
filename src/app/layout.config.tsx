@@ -19,14 +19,13 @@ export const baseOptions: BaseLayoutProps = {
       </Fragment>
     ),
   },
-  githubUrl: "https://google.es",
+  githubUrl: "https://github.com/O-Isaac/Proyecto-Grand-Order-Docs",
   // see https://fumadocs.dev/docs/ui/navigation/links
   links: [
     {
       text: "Documentación",
       url: "/docs",
-      // secondary items will be displayed differently on navbar
-      secondary: false,
+      type: "main",
       icon: <IconBook stroke={2} />,
     },
   ],
