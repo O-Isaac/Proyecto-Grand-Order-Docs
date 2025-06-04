@@ -55,7 +55,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       react-icons:
         specifier: ^5.2.1
-        version: 5.2.1(react@18.2.0)
+        version: 5.5.0(react@18.2.0)
       react-tabbordion:
         specifier: ^1.0.6
         version: 1.0.6(prop-types@15.8.1)(react@18.2.0)
@@ -2144,6 +2144,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -2644,8 +2645,8 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
-  react-icons@5.2.1:
-    resolution: {integrity: sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==}
+  react-icons@5.5.0:
+    resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
 
@@ -6137,7 +6138,7 @@ snapshots:
       react: 18.2.0
       scheduler: 0.23.2
 
-  react-icons@5.2.1(react@18.2.0):
+  react-icons@5.5.0(react@18.2.0):
     dependencies:
       react: 18.2.0
 
