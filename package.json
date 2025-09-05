@@ -32,7 +32,7 @@
     "react-icons": "^5.2.1",
     "react-tabbordion": "^1.0.6",
     "sharp": "^0.33.4",
-    "uuid": "^11.0.3"
+    "uuid": "^12.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
