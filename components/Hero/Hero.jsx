@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="h-screen bg-gradient-to-t from-gray-400 to-gray-200 -mt-16">
-      <div className="bg-gray-200 absolute left-0 h-1/2 bottom-0 w-full gradient-mask-t-20"></div>
+      <div className="bg-gray-200 absolute left-0 h-screen bottom-0 w-full gradient-mask-t-20"></div>
       <video
         className="h-full w-full object-cover "
         autoPlay
