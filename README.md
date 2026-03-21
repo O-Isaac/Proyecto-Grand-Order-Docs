@@ -1,45 +1,65 @@
-<h1 align="center">Proyecto Grand Order</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
-</p>
+![Website](website.png)
 
-> Documentación de como descargar y instalar el parche para jugar Fate/Grand Order
+# Proyecto Grand Order Docs
 
-### 🏠 [Homepage](proyectograndorder.es)
+Documentacion oficial del proyecto para instalar, actualizar y solucionar problemas de Rayshift Translate en Fate/Grand Order.
 
-## Instalar
+- Sitio: https://proyectograndorder.es
+- Stack: Next.js 14 + Nextra + Tailwind CSS
+- Licencia: ISC
+
+## Requisitos
+
+- Node.js 18 o superior
+- pnpm habilitado
+
+Si `pnpm` no se reconoce en tu sistema:
+
+```sh
+corepack enable
+```
+
+## Instalacion
 
 ```sh
 pnpm install
 ```
 
-## Uso
-Para iniciar el servidor de desarrollo puedes usar escribir el comando
+## Desarrollo local
 
 ```sh
 pnpm dev
 ```
 
-## Pnpm no se reconoce como un comando
-Esto es por que no tiene activado, dicho gesto de paquetes puedes activarlo con el siguiente comando 
-solo para las ultimas versiones de npm
+Abre `http://localhost:3000`.
 
-```sh
-corepack enable 
-```
+## Scripts disponibles
 
-## Como contribuir
-Para contribuir haz un fork de este repositorio, haz los cambios que veas oportuno y inicia una pull request para examinar y añadir tu cambios. 
+- `pnpm dev`: inicia el servidor de desarrollo.
+- `pnpm build:site`: genera el build de Next.js.
+- `pnpm build:sitemaps`: genera sitemaps con `next-sitemap`.
+- `pnpm build`: ejecuta build de sitio + sitemaps.
+- `pnpm start`: levanta el sitio en modo produccion.
+
+## Estructura principal
+
+- `pages/`: contenido de documentacion en MDX.
+- `components/`: componentes reutilizables del sitio.
+- `public/`: assets estaticos (imagenes, favicon, sitemap, etc.).
+- `styles/`: estilos globales.
+- `utils/`: utilidades internas.
+
+## Contribuir
+
+1. Haz un fork del repositorio.
+2. Crea una rama con tu cambio.
+3. Realiza tus modificaciones y prueba en local.
+4. Abre un Pull Request con una descripcion clara.
 
 ## Autor
 
-👤 **IsaacZM**
+- GitHub: [@O-Isaac](https://github.com/O-Isaac)
 
-* Website: O-Isaac
-* Github: [@O-Isaac](https://github.com/O-Isaac)
+## Apoyo
 
-## Muestrame tu apoyo 
-Si te gusto el esta pagina web puede apoyarme dandole ⭐️ 
+Si te resulta util este proyecto, puedes apoyarlo con una estrella en GitHub.
