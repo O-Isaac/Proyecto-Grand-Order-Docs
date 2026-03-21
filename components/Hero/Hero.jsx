@@ -1,15 +1,20 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Hero() {
   return (
     <section className="hero-video-shell relative -mt-16 h-screen overflow-hidden bg-zinc-100 dark:bg-black">
+      <Head>
+        <link rel="preload" as="video" href="/themes/musashi.webm" type="video/webm" />
+      </Head>
+
       <video
         className="hero-video absolute inset-0 h-full w-full object-cover"
         autoPlay
         playsInline
         muted
         loop
-        fetchPriority="high"
+        preload="metadata"
         src="/themes/musashi.webm"
       />
       <div className="hero-video-overlay absolute inset-0" />
