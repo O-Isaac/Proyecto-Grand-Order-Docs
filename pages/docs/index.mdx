@@ -1,12 +1,13 @@
 ---
 title: Introducción
-description: Sigue estos pasos para instalar el parche fácilmente!
+description: Guia actualizada para instalar y usar Rayshift Translate.
 ---
 
 import Github from "@/components/Embed/Github.jsx";
 import Image from "@/components/Image/Image.jsx";
 import Caption from "@/components/Image/Caption.jsx";
-import Button from "@/components/Button/Button.jsx";
+import { Steps } from "nextra-theme-docs";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
 
 <Caption
   caption="Clic para descargar"
@@ -17,28 +18,102 @@ import Button from "@/components/Button/Button.jsx";
 
 # Rayshift Translate App
 
-Esta aplicación ofrece traducciones hechas por Máquina/MTL (Deepl) y manuales de eventos e historias recientes (al inglés) del juego en el Servidor
-JP y traducciones manuales al Español de la historia principal y diversos Eventos
-e Interludios, esta última utilizando la traducción oficial del Servidor NA. Además,
-traducciones al Francés, Indonesio, Ruso, Portugués y Árabe.
+Esta aplicacion traduce contenido de Fate/Grand Order JP y NA a varios idiomas, incluyendo Espanol.
+
+<ProjectAlert
+  title="Compatibilidad Android 14+"
+  description={
+    <span>
+      Android 14+ ya es compatible. Si tu dispositivo presenta problemas de acceso a archivos, revisa la guia de Shizuku en esta documentacion.
+    </span>
+  }
+/>
 
 ## Requisitos
 
-Está disponible para Android 5, 6, 7, 8, 9, 10, 11, 12 y 13.
-No es necesario Root.
-Para Android 12 y 13 ya es completamente compatible, descargando la ultima versión.
-Para Android 14 o superior es posible el requisito de uso de una aplicación llamada "Shizuku".
+- Android 7 a 15+.
+- No requiere root.
+- Puede requerir Shizuku en algunos dispositivos modernos.
 
 ## ¿Cómo Instalo la app?
 
-- Asegúrese de tener instalado la última versión de Fate/Grand Order.
-- Inicie la aplicación de Fate/Grand Order para asegurarse de que no haya ninguna actualización adicional disponible. Una vez hecho eso, cierre la aplicación.
-- Descargue e Instale la última APK disponible de Rayshift.io Translate, por esta Web o nuestros medios Oficiales:
-- Seleccione y ajuste el idioma en el que desee que esté la aplicación
-- Si le pide que elija una carpeta, seleccione Aceptar y luego vuelva a seleccionar "Usar esta Carpeta".
-- Diríjase al apartado del Servidor que desea parchear (JP o NA).
-- Presione «Instalar» bajo el paquete de idiomas disponible en el Servidor seleccionado.
-- Una vez instalado, reabrir la aplicación de Fate/Grand Order.
+<Steps>
+### Actualiza el juego
+
+Asegurate de tener Fate/Grand Order en su version mas reciente.
+
+### Acepta descargas pendientes
+
+Abre FGO y completa cualquier descarga de datos.
+
+### Cierra FGO
+
+Sal completamente del juego antes de continuar.
+
+### Instala Rayshift Translate
+
+Descarga e instala la ultima APK oficial de Rayshift.
+
+### Configura la app
+
+Completa el flujo inicial de configuracion.
+
+### Aplica el bundle
+
+Presiona **Install** en el bundle que quieras usar (JP o NA).
+
+### Vuelve al juego
+
+Reabre Fate/Grand Order.
+</Steps>
+
+## Actualizaciones
+
+Cuando haya contenido nuevo:
+
+<Steps>
+### Descarga datos nuevos en FGO
+
+Abre Fate/Grand Order y acepta la descarga.
+
+### Actualiza en Rayshift
+
+Cierra Fate/Grand Order y pulsa **Update** en Rayshift Translate.
+
+### Reabre FGO
+
+Inicia de nuevo el juego.
+</Steps>
+
+La app tambien puede auto-actualizar cambios menores del bundle si el dispositivo es compatible.
+
+## Desinstalacion
+
+<Steps>
+### Cierra el juego
+
+Cierra Fate/Grand Order.
+
+### Desinstala en Rayshift
+
+Abre Rayshift Translate y pulsa **Uninstall**.
+
+### Reabre Fate/Grand Order
+
+Comprueba que el estado sea normal.
+
+### Limpia cache si hace falta
+
+Si notas inconsistencias, limpia cache desde el juego.
+</Steps>
+
+## Problemas comunes
+
+- Error largo al instalar: suele ser conexion inestable. Prueba cambiando entre Wi-Fi y datos moviles.
+- Asset database is corrupt / Failed to read beyond the end of the stream:
+  reinicia el telefono y prueba otro Filesystem Access Mode (Android 12 o menor: SAF; Android moderno: Shizuku).
+- An internal error has occurred:
+  prueba red, reinicio del telefono, About -> Configure Android 11 Setup y reinstalacion de la app.
 
 <br />
 

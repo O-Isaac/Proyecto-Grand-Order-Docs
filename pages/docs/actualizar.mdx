@@ -1,19 +1,43 @@
-import { Callout } from 'nextra-theme-docs'
+import { Steps } from "nextra-theme-docs";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
 
 # Actualizar
-La aplicación recibirá actualizaciones periódicamente. Mientras mantenga la aplicación instalada, verifíquela regularmente.
+La aplicacion recibira actualizaciones periodicas. Mientras mantenga la app instalada, verifiquela regularmente.
 
-<Callout type="info" emoji="⚒️">
- En el apartado del Servidor seleccionado, el estado de **«Instalado»** en el paquete, cambiará a **«Actualización Disponible»** en caso de haber una.
-</Callout>
+<ProjectAlert
+	title="Estado de actualizacion"
+	description={
+		<span>
+			En el servidor seleccionado, el estado <strong>Instalado</strong> cambiara a <strong>Actualizacion Disponible</strong> cuando exista una nueva version.
+		</span>
+	}
+/>
 
-Para actualizar el nuevo paquete debe hacer lo siguiente:
-- Asegúrese de tener instalado la última versión de Fate/Grand Order.
-- Inicie la aplicación de Fate/Grand Order para asegurarse de que no haya ninguna actualización adicional disponible. Una vez hecho eso, cierre la aplicación.
-- En la aplicación de Rayshift.io Translate, presione «Actualizar» en el apartado del Servidor seleccionado.
-- Una vez actualizado, reabrir la aplicación de Fate/Grand Order.
+## Pasos para actualizar
 
-<Callout>
-La aplicación también se actualizará automáticamente en caso de haber modificaciones menores, siempre que su dispositivo sea compatible. 
-Puede desactivar esta opción en el apartado de **"About"**
-</Callout>
+<Steps>
+### Actualiza Fate/Grand Order
+
+Asegurate de tener Fate/Grand Order en su version mas reciente.
+
+### Verifica descargas pendientes
+
+Abre Fate/Grand Order para confirmar que no haya datos pendientes, luego cierra el juego.
+
+### Aplica la actualizacion en Rayshift
+
+En Rayshift Translate, presiona **Actualizar** en el servidor que usas.
+
+### Reabre el juego
+
+Inicia Fate/Grand Order nuevamente y valida que la traduccion cargue correctamente.
+</Steps>
+
+<ProjectAlert
+	title="Actualizaciones menores automaticas"
+	description={
+		<span>
+			La app tambien puede actualizar cambios menores automaticamente si tu dispositivo es compatible. Puedes desactivar esta opcion en la seccion <strong>About</strong>.
+		</span>
+	}
+/>

@@ -1,5 +1,8 @@
 import Button from "../../components/Button/Button.jsx";
 import Link from "next/link";
+import { Steps } from "nextra-theme-docs";
+import GuidanceList from "@/components/Embed/GuidanceList.jsx";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
 
 ## ¿Funciona en NA?
 
@@ -7,18 +10,26 @@ Por supuesto, el Servidor NA es compatible con traducciones al Español y PTBR a
 
 ## Quiero usar el parche, pero tengo miedo, ¿Es posible que me baneen?
 
-Razones del porque es nula la posibilidad de un BAN
+<ProjectAlert
+  title="Aviso de riesgo"
+  description={
+    <span>
+      Ningun parche externo es 100% libre de riesgo. Usa la app bajo tu criterio y mantente informado de cualquier cambio en Terminos de Servicio.
+    </span>
+  }
+/>
 
-- El juego no detecta ni puede detectar nada de lo que hace esta aplicación, porque no tiene un sistema para ello.
-- Diseñar un sistema para monitorizar los archivos temporales, es costoso, inútil y puede traer bugs, ninguna empresa lo haría, ya que no hay merito para ello.
+Razones por las que el riesgo reportado por la comunidad es bajo:
 
-- Nuestra App no requiere Root (Por ende es segura de usar)
-
-- Actualmente esta aplicación no viola ninguno de los términos de servicio, los cuales solo sancionan específicamente la modificación de la data interna del APK.
-
-- Esta aplicación no modifica el APK.
-
-- Concretamente modifica el texto en caché de su tarjeta SD o almacenamiento interno, instalando ahí la traducción (Por ello es que al actualizar FGO, no se pierde la traducción, ya que la cache esta alojada fuera de la data interna del APK)
+<GuidanceList
+  items={[
+    "El juego no detecta ni puede detectar directamente este flujo, porque no tiene un sistema dedicado para monitorear ese tipo de cache temporal.",
+    "Nuestra app no requiere root.",
+    "La app no modifica el APK interno del juego.",
+    "La traduccion se aplica sobre cache en almacenamiento, por eso suele persistir incluso tras updates normales del juego.",
+    "No altera gameplay ni agrega ventajas competitivas (no es cheat ni hack).",
+  ]}
+/>
 
 A los Dev’s y las distribuidoras no les interesa prohibir a las personas que traduzcan su juego. Muchos otros juegos han tenido modificaciones similares en uso durante años sin ningún tipo de problemas y actualmente las tienen.
 
@@ -33,8 +44,20 @@ En el caso de que se modifiquen los Términos de Servicio (ToS), inmediatamente 
 
 ## Cuando intento instalar el paquete de idiomas tengo un error, ¿Qué hago?
 
-Puedes reportar ese error en nuestro servidor oficial o en rayshift
+<Steps>
+### Verifica conexion y version
+
+Confirma que tienes internet estable y la ultima version de Rayshift Translate.
+
+### Reintenta el proceso
+
+Cierra el juego, abre Rayshift y vuelve a aplicar la instalacion.
+
+### Reporta el error
+
+Si persiste, reportalo en el servidor oficial de soporte de Rayshift.
+</Steps>
 
 ## ¿Donde descargo el parche?
 
-Puedes consultar la sección de instalar para consultar donde debe descargar el parche
+Puedes descargarlo desde la seccion de instalacion o desde el release oficial en GitHub.

@@ -1,6 +1,33 @@
+import { Steps } from "nextra-theme-docs";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
+
 # Desinstalación
-Si usted desea desinstalar el parche solo tiene que seguir estos pasos:
-* Cerrar la aplicación de Fate/Grand Order.
-* Abrir la aplicación de Rayshift.io Translate, presionar el botón de «Desinstalar».
-* Reabrir la aplicación de Fate/Grand Order.
-* También puede borrar el caché del juego en caso de no poder utilizar la aplicación
+
+Si deseas desinstalar el parche, sigue este flujo.
+
+<Steps>
+### Cierra Fate/Grand Order
+
+Antes de desinstalar, asegurate de que el juego este totalmente cerrado.
+
+### Abre Rayshift Translate
+
+Entra a la app y presiona el boton **Desinstalar**.
+
+### Reabre Fate/Grand Order
+
+Inicia el juego para comprobar que todo quedo en estado base.
+
+### Limpia cache si es necesario
+
+Si notas comportamiento raro, limpia cache desde el juego y vuelve a abrir.
+</Steps>
+
+<ProjectAlert
+	title="Nota sobre Shizuku"
+	description={
+		<span>
+			Si usas Shizuku u otro modo de acceso avanzado, no necesitas desinstalarlo para quitar el parche de Rayshift.
+		</span>
+	}
+/>

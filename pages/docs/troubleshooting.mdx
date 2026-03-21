@@ -3,30 +3,74 @@ title: Troubleshooting
 description: Soluciones a diferentes problemas del parche.
 ---
 
+import { Steps } from "nextra-theme-docs";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
+
 Si estás recibiendo un error prolongado, es posible que tu conexión a internet no sea estable. Intenta cambiar entre Wi-Fi y datos móviles (4G) o prueba nuevamente desde una ubicación diferente.
 
 ### "An internal error has occurred"
 
-Prueba estos pasos para resolver el problema:
+Prueba este flujo para resolver el problema:
 
-1. Cambia entre Wi-Fi y datos móviles (4G). Si el error persiste,
-2. Reinicia tu teléfono. Si el error persiste,
-3. Ve a **Acerca de -> Configurar Android 11 Setup**. Si el error persiste,
-4. Reinstala la aplicación **translatefgo**. Si el error aún persiste,
-5. Reporta el problema como un error en **Reportar Error**.
+<Steps>
+### Cambia de red
+
+Alterna entre Wi-Fi y datos moviles (4G/5G).
+
+### Reinicia el telefono
+
+Un reinicio limpio suele resolver bloqueos temporales de permisos o cache.
+
+### Ejecuta Android 11 Setup
+
+Entra en **Acerca de -> Configurar Android 11 Setup**.
+
+### Reinstala translatefgo
+
+Si el error persiste, reinstala la app.
+
+### Reporta el problema
+
+Si nada funciona, envialo desde **Reportar Error** con el mayor detalle posible.
+</Steps>
 
 ### Shizuku (El permiso de ADB está limitado)
 
 Este tipos de problemas puede darse en lo siguientes dispositivos y sistemas:
 
+<ProjectAlert
+	title="Recomendacion para Android 14+"
+	description={
+		<span>
+			Si usas Android 14+, Shizuku suele ser la opcion mas estable para Filesystem Access Mode moderno.
+		</span>
+	}
+/>
+
 #### MIUI (Xiaomi, POCO)
 
-1. Habilita la opción **"Depuración USB (Opciones de seguridad)"** en **"Opciones de desarrollador"**. Ten en cuenta que esta es una opción separada de **"Depuración USB"**.
+<Steps>
+### Activa depuracion USB de seguridad
+
+Habilita **Depuracion USB (Opciones de seguridad)** en **Opciones de desarrollador**.
+
+### Verifica depuracion USB normal
+
+Confirma que tambien este activa la depuracion USB normal (son opciones separadas).
+</Steps>
 
 #### ColorOS (OPPO & OnePlus)
 
-1. Desactiva **"Monitoreo de permisos"** en **"Opciones de desarrollador"**.
+<Steps>
+### Desactiva monitoreo de permisos
+
+En **Opciones de desarrollador**, desactiva **Monitoreo de permisos**.
+</Steps>
 
 #### Flyme (Meizu)
 
-1. Desactiva **"Protección de pagos Flyme"** en **"Opciones de desarrollador"**.
+<Steps>
+### Desactiva proteccion de pagos Flyme
+
+En **Opciones de desarrollador**, desactiva **Proteccion de pagos Flyme**.
+</Steps>

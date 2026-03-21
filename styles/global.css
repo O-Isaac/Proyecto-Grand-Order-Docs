@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --site-radial-a: rgba(15, 76, 161, 0.28);
+  --site-radial-b: rgba(201, 157, 59, 0.24);
+}
+
+.dark {
+  --site-radial-a: rgba(72, 137, 232, 0.26);
+  --site-radial-b: rgba(222, 173, 73, 0.22);
+}
+
+@keyframes mesh-float-a {
+  0% {
+    transform: translate3d(-50%, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(calc(-50% + 6px), 8px, 0) scale(1.01);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0) scale(1);
+  }
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: min(72rem, calc(100vw - 3rem));
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 22rem 82% at 14% 50%, var(--site-radial-a) 0%, transparent 68%),
+    radial-gradient(ellipse 20rem 78% at 86% 50%, var(--site-radial-b) 0%, rgba(154, 38, 72, 0.1) 42%, transparent 70%);
+  filter: blur(40px);
+  opacity: 0;
+  mix-blend-mode: multiply;
+  will-change: transform;
+  animation: mesh-float-a 46s ease-in-out infinite;
+  mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%);
+}
+
+.dark body::before {
+  opacity: 0.46;
+  mix-blend-mode: screen;
+}
+
+#__next {
+  position: relative;
+  z-index: 1;
+}
+
 /* Parrallax */
 @keyframes parallax-up {
   from {

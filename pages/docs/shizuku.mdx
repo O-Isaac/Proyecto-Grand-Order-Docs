@@ -1,0 +1,95 @@
+---
+title: Shizuku
+description: Instalacion recomendada de Shizuku y configuracion para Android 14 o superior.
+---
+
+import { Steps } from "nextra-theme-docs";
+import GithubDirectDownload from "@/components/Embed/GithubDirectDownload.jsx";
+import VideoPlayer from "@/components/Embed/VideoPlayer.jsx";
+import WebsiteEmbedCard from "@/components/Embed/WebsiteEmbedCard.jsx";
+import GuidanceList from "@/components/Embed/GuidanceList.jsx";
+import ProjectAlert from "@/components/Project/ProjectAlert.jsx";
+
+# Instalar y usar Shizuku
+
+<ProjectAlert
+	title="Nota de compatibilidad"
+	description={
+		<span>
+			Android 14+ ya es compatible con Rayshift Translate, pero en algunos dispositivos modernos puede ser necesario usar Shizuku para que el acceso a archivos funcione correctamente.
+		</span>
+	}
+/>
+
+## Version recomendada
+<br />
+<GithubDirectDownload
+	href="https://github.com/thedjchi/Shizuku/releases/download/v13.6.0.r1318-thedjchi/shizuku-v13.6.0.r1318-thedjchi.apk"
+	filename="shizuku-v13.6.0.r1318-thedjchi.apk"
+	helperText="Si tienes errores con otra version, reinstala esta build para mejorar compatibilidad."
+/>
+
+## Sitio oficial de Shizuku
+
+<WebsiteEmbedCard
+	href="https://shizuku.rikka.app/"
+	title="Shizuku"
+	description="Pagina oficial con documentacion y enlaces de la aplicacion."
+/>
+
+## Instalacion
+
+<Steps>
+### Descarga el APK recomendado
+
+Usa el enlace de descarga directa de arriba para instalar la version sugerida.
+
+### Instala Shizuku
+
+Abre el APK y completa la instalacion en Android.
+
+### Completa la configuracion inicial
+
+Abre Shizuku y termina el setup de primer inicio.
+</Steps>
+
+## Como usar Shizuku con el parche
+
+<Steps>
+### Activa opciones de desarrollador
+
+Habilitalas en Android si aun no estan activas.
+
+### Activa depuracion inalambrica
+
+Necesaria para iniciar Shizuku en la mayoria de dispositivos modernos.
+
+### Inicia Shizuku
+
+Usa el metodo recomendado en la app (depuracion inalambrica).
+
+### Concede permisos
+
+Acepta los permisos que solicite Rayshift Translate.
+
+### Reintenta la instalacion del parche
+
+Vuelve a abrir la app y ejecuta la instalacion otra vez.
+</Steps>
+
+## Video de referencia
+
+<VideoPlayer
+	src="/videos/shizuku-install.webm"
+	title="Guia visual: configuracion de Shizuku para usar Rayshift Translate"
+/>
+
+## Recomendacion importante
+
+<GuidanceList
+	items={[
+		"Usa exactamente la version enlazada arriba para evitar incompatibilidades.",
+		"Si ya tenias otra version de Shizuku y te falla, desinstalala y reinstala esta version.",
+		"Si ves errores de base de datos o lectura, reinicia el telefono y vuelve a intentar.",
+	]}
+/>
