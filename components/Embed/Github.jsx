@@ -1,59 +1,59 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
-export default function EmbedGithub({ repo }) {
-  const [hash, setHash] = useState(null);
+export default function EmbedGithub({ repo, priority = false }) {
+  const MAX_RETRIES = 2;
+  const [attempt, setAttempt] = useState(0);
+  const [failed, setFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const imageRef = useRef(null);
 
-  const CACHE_KEY = `github-og-cache-${repo}`;
-  const CACHE_DURATION = 30 * 60 * 1000;
-
-  const generateHash = async () => {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(crypto.randomUUID());
-    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const hashHex = hashArray
-      .map((byte) => byte.toString(16).padStart(2, "0"))
-      .join("");
-
-    return hashHex;
-  };
-
-  const generateAndCache = async () => {
-    const hash = await generateHash();
-    setHash(hash);
-    localStorage.setItem(
-      CACHE_KEY,
-      JSON.stringify({ hash, timestamp: Date.now() })
-    );
-  };
+  const src = useMemo(
+    () => `https://opengraph.githubassets.com/1/${repo}?r=${attempt}`,
+    [repo, attempt]
+  );
 
   useEffect(() => {
-    const cachedData = localStorage.getItem(CACHE_KEY);
+    if (failed) return;
 
-    if (cachedData) {
-      const { hash: cachedHash, timestamp } = JSON.parse(cachedData);
-      const now = Date.now();
-
-      if (now - timestamp < CACHE_DURATION) {
-        setHash(cachedHash);
-      } else {
-        generateAndCache();
-      }
-    } else {
-      generateAndCache();
+    const img = imageRef.current;
+    if (img && img.complete && img.naturalWidth > 0) {
+      setLoaded(true);
     }
-  }, []);
+  }, [src, failed]);
+
+  const handleError = () => {
+    if (attempt < MAX_RETRIES) {
+      setLoaded(false);
+      setAttempt((prev) => prev + 1);
+      return;
+    }
+    setFailed(true);
+  };
 
   return (
-    <section className="bg-neutral-900 border-none rounded-t-2xl aspect-[16/8] w-full block max-w-full mt-3">
-      {hash && (
+    <section className="relative block aspect-[16/8] w-full max-w-full overflow-hidden bg-neutral-900 rounded-t-2xl border-none">
+      {!failed && !loaded && (
+        <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800" />
+      )}
+
+      {!failed ? (
         <img
-          width="1200px"
-          height="600px"
-          className="rounded-t-2xl"
-          src={`https://opengraph.githubassets.com/${hash}/${repo}`}
-          alt={`https://github.com/${repo}`}
+          ref={imageRef}
+          width={1200}
+          height={600}
+          className={`h-full w-full rounded-t-2xl object-cover transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
+          src={src}
+          alt={`Preview del repositorio ${repo}`}
+          loading={priority ? "eager" : "lazy"}
+          fetchpriority={priority ? "high" : "auto"}
+          decoding="async"
+          onLoad={() => setLoaded(true)}
+          onError={handleError}
         />
+      ) : (
+        <div className="flex h-full w-full items-center justify-center rounded-t-2xl bg-neutral-900 px-6 text-center text-sm text-neutral-200">
+          No se pudo cargar la vista previa de GitHub. Puedes abrir el repositorio directamente.
+        </div>
       )}
     </section>
   );
