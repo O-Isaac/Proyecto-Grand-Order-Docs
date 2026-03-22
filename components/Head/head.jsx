@@ -37,6 +37,7 @@ export default function Head() {
       <meta name="twitter:image" content={image} />
       <meta property="og:image:width" content="1020" />
       <meta property="og:image:height" content="170" />
+      <meta name="algolia-site-verification" content="02BD8BE8CEB1BBEB" />
 
       <Favicon />
 
