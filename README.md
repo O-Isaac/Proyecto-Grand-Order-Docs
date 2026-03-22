@@ -41,6 +41,25 @@ Abre `http://localhost:3000`.
 - `pnpm build`: ejecuta build de sitio + sitemaps.
 - `pnpm start`: levanta el sitio en modo produccion.
 
+## Busqueda (modo hibrido)
+
+El sitio ahora usa una busqueda hibrida:
+
+- Sin variables de entorno: usa la busqueda local de Nextra (fallback).
+- Con credenciales de Algolia: usa DocSearch (UX similar a Starlight).
+
+Variables opcionales para activar Algolia:
+
+- `NEXT_PUBLIC_ALGOLIA_APP_ID`
+- `NEXT_PUBLIC_ALGOLIA_API_KEY`
+- `NEXT_PUBLIC_ALGOLIA_INDEX_NAME`
+
+Para solicitar DocSearch gratis (sitios de documentacion OSS):
+
+- https://docsearch.algolia.com/apply/
+
+Cuando Algolia aprueba tu dominio, agrega esas variables y reinicia `pnpm dev`.
+
 ## Estructura principal
 
 - `pages/`: contenido de documentacion en MDX.

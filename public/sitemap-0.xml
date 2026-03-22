@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://proyectograndorder.es</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/acerca-del-proyecto</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/instalar</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/instalar/actualizar</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/instalar/deinstalar</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/instalar/faq</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/instalar/progreso</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://proyectograndorder.es/reportar</loc><lastmod>2023-04-20T21:57:30.714Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es</loc><lastmod>2026-03-22T19:54:07.989Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/acerca-del-proyecto</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs/actualizar</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs/desinstalar</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs/faq</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs/shizuku</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/docs/troubleshooting</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/reportes</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/special/avalon</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/special/nahuil</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://proyectograndorder.es/special/traum</loc><lastmod>2026-03-22T19:54:07.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
