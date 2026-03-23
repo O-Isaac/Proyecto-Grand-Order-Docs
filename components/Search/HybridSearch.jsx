@@ -10,6 +10,30 @@ export default function HybridSearch({ className }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
+  const closeMobileMenuIfOpen = () => {
+    if (typeof window === "undefined" || window.innerWidth >= 768) {
+      return;
+    }
+
+    const menuButton = document.querySelector(
+      'button.nextra-hamburger[aria-label="Menu"]'
+    );
+
+    if (!menuButton) {
+      return;
+    }
+
+    const isMenuOpen = Boolean(menuButton.querySelector("svg.open"));
+    if (isMenuOpen) {
+      menuButton.click();
+    }
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+    closeMobileMenuIfOpen();
+  };
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -23,7 +47,7 @@ export default function HybridSearch({ className }) {
       }
 
       if (event.key === "Escape") {
-        setIsOpen(false);
+        handleClose();
       }
     };
 
@@ -42,7 +66,7 @@ export default function HybridSearch({ className }) {
         apiKey={apiKey}
         indexName={indexName}
         initialScrollY={window.scrollY}
-        onClose={() => setIsOpen(false)}
+        onClose={handleClose}
         placeholder="Buscar en la documentacion..."
         translations={{
           modal: {
