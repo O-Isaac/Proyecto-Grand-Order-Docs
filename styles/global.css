@@ -181,7 +181,6 @@ body::before {
 }
 
 .hero-video {
-  animation: hero-video-drift 18s ease-in-out infinite alternate;
   transform-origin: center;
   filter:
     brightness(var(--hero-brightness))
