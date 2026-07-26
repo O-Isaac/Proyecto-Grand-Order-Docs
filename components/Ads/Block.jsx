@@ -20,7 +20,8 @@ export default function AdsBlock() {
       padding: '12px',
       borderRadius: '8px',
       border: '1px solid #e5e7eb',
-      fontSize: '12px'
+      fontSize: '12px',
+      maxHeight: '300px',
     }}>
       <p style={{ opacity: 0.6, marginBottom: 4 }}>Publicidad</p>
       <ins
