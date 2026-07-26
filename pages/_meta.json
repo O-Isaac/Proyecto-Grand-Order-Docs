@@ -31,5 +31,9 @@
     "title": "Roadmap",
     "type": "page",
     "href": "https://roadmap.proyectograndorder.es"
+  },
+  "ads-separator": {
+    "type": "separator",
+    "title": "ads-block"
   }
 }

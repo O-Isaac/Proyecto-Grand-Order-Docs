@@ -38,6 +38,7 @@ export default function Head() {
       <meta property="og:image:width" content="1020" />
       <meta property="og:image:height" content="170" />
       <meta name="algolia-site-verification" content="02BD8BE8CEB1BBEB" />
+      <meta name="google-adsense-account" content="ca-pub-4362041328159109" />
 
       <Favicon />
 
